@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en-GB">
+ <!--<![endif]-->
+ <head>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH32T6V');
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Using near real-time data on aid flows: Lessons learnt - Development Initiatives
+  </title>
+  <link href="/assets/css/screen.min.css" media="screen, print" rel="stylesheet"/>
+  <link disabled="" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"/>
+  <script defer="">
+   /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+	grunticon(["/assets/icons/ico.data.svg.css", "/assets/icons/ico.data.png.css", "/assets/icons/ico.fallback.css"]);
+  </script>
+  <noscript>
+   <link href="/assets/icons/ico.fallback.css" rel="stylesheet"/>
+  </noscript>
+  <script defer="" src="/assets/js/libs/modernizr.js">
+  </script>
+  <link href="/assets/favicons/favicon.webp" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/css/di_website.min.css" media="screen, print" rel="stylesheet">
+   <meta content="summary_large_image" name="twitter:card"/>
+   <meta content="Using near real-time data on aid flows: Lessons learnt — Development Initiatives" name="twitter:title"/>
+   <meta content="Benefits and challenges of real-time data for analysis on aid flows. How does OECD DAC CRS and IATI data compare, and how can data quality help timely analysis?" name="twitter:description"/>
+   <meta content="/media/images/Wislyne_S._Yarh_Sieh_Officer_in_ch.2e16d0ba.fill-800x450.jpg" name="twitter:image"/>
+   <meta content="/blog/using-near-real-time-data-aid-flows-lessons-learnt/" property="og:url">
+    <meta content="Using near real-time data on aid flows: Lessons learnt" property="og:title">
+     <meta content="Benefits and challenges of real-time data for analysis on aid flows. How does OECD DAC CRS and IATI data compare, and how can data quality help timely analysis?" property="og:description">
+      <meta content="Development Initiatives" property="og:site_name">
+       <meta content="/media/images/Wislyne_S._Yarh_Sieh_Officer_in_ch.2e16d0ba.fill-800x450.jpg" property="og:image">
+        <meta content="/blog/using-near-real-time-data-aid-flows-lessons-learnt/" itemprop="url">
+         <meta content="Using near real-time data on aid flows: Lessons learnt — Development Initiatives" itemprop="name"/>
+         <meta content="Benefits and challenges of real-time data for analysis on aid flows. How does OECD DAC CRS and IATI data compare, and how can data quality help timely analysis?" itemprop="description">
+          <meta content="/media/images/Wislyne_S._Yarh_Sieh_Officer_in_ch.2e16d0ba.fill-800x450.jpg" itemprop="image"/>
+          <meta content="Benefits and challenges of real-time data for analysis on aid flows. How does OECD DAC CRS and IATI data compare, and how can data quality help timely analysis?" name="description"/>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </link>
+ </head>
+ <body class="body body--" id="body-">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NH32T6V" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div class="ui-base">
+   <input name="csrfmiddlewaretoken" type="hidden" value="kErYx2075oDzrZEH1CVO3JnQSjZvj841Y9wTgktNtP5NZXuBqnYe08PrGxgB1iTs"/>
+   <div class="notice__wrapper notice__wrapper--notice display-none" data-notice="" id="cookie_notice">
+    <div class="row">
+     <div class="notice__content">
+      <p>
+       We use cookies on our website to help us understand how you use the site and to make improvements. These may be used to track your visit to our website or to enable us to personalise your browsing experience, and they may be shared with Google Analytics so that your data can be processed. For more information, please visit our Privacy and cookies policy page
+      </p>
+      <button class="button button--reverse" data-notice-accept-all="" id="cookie_notice">
+       Accept all cookies
+      </button>
+      <button class="button button--reverse" data-notice-accept-necessary="" id="cookie_notice">
+       Accept necessary cookies
+      </button>
+      <p>
+       You can change your preferences at any time by clicking the button at the bottom of this page.
+      </p>
+     </div>
+    </div>
+   </div>
+   <a class="skiplink" data-js="skiplink" href="#pagecontent">
+    Skip to main content
+   </a>
+   <header class="header" role="banner">
+    <div class="row">
+     <a class="branding" href="/">
+      Development Initiatives
+     </a>
+     <button class="navigation-primary-toggle" id="navigation-primary-toggle" role="button">
+      <span>
+       Menu
+      </span>
+     </button>
+     <nav class="navigation-primary" id="navigation-primary" role="navigation">
+      <ul class="navigation-primary__items">
+       <li class="navigation-primary__item">
+        <a href="/who-we-are/?nav=header">
+         Who we are
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/what-we-do/?nav=header">
+         What we do
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/how-we-work/?nav=header">
+         How we work
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/resources/?nav=header">
+         Resources
+        </a>
+       </li>
+       <li class="navigation-primary__item navigation-primary__item--active">
+        <a href="/blog/?nav=header">
+         Blog
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/events/?nav=header">
+         Events
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/data/?nav=header">
+         Data
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/work-for-us/?nav=header">
+         Work for us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main class="pagecontent -nofocus" id="pagecontent" role="main" tabindex="-1">
+    <section class="hero hero--image">
+     <div class="hero__image" id="ri33a9dd">
+      <style scoped="">
+       @media all and (min-width: 1px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-400x300-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-400x300-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_ch.2e16d0ba.fill-800x600.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-400x300-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_ch.2e16d0ba.fill-800x600.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 400px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-500x280-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-500x280-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-1000x560.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-500x280-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-1000x560.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 500px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-780x230-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-780x230-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-1560x460.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer_.2e16d0ba.fill-780x230-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-1560x460.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 780px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1000x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1000x435-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-2000x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1000x435-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-2000x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1000px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1350x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1350x435-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-2700x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1350x435-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-2700x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1350px) {
+                #ri33a9dd {
+                    background-image: url(/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1800x430-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1800x430-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-3600x860.jpg") 2x);
+                    background-image: image-set(url("/media/images/Wislyne_S._Yarh_Sieh_Officer.2e16d0ba.fill-1800x430-c100.jpg") 1x, url("/media/images/Wislyne_S._Yarh_Sieh_Officer_in_c.2e16d0ba.fill-3600x860.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+      </style>
+     </div>
+     <span class="hero__credit">
+      Image by
+      <a href="http://www.flickr.com/photos/usaid_images/49985004238/">
+       USAID
+      </a>
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <div class="row row--narrow">
+      <div class="hero__content">
+       <ul class="hero__meta">
+        <li class="hero__meta-item hero__meta-item--block">
+         Blog
+        </li>
+        <li class="hero__meta-item">
+         28 June 2021
+        </li>
+       </ul>
+       <h1 class="hero__title">
+        <span>
+         Using near real-time data on aid flows: Lessons learnt
+        </span>
+       </h1>
+       <div class="hero__excerpt">
+        <p>
+         Bill Anderson shares lessons learnt from DI’s recent experience using near real-time data to examine donor response to the Covid-19 pandemic, highlighting an urgent need for timely, disaggregated data.
+        </p>
+       </div>
+      </div>
+     </div>
+     <a class="m-author" href="/who-we-are/our-team/bill-anderson/?referrer=author">
+      <div class="m-author__image" style="background-image: url(/media/images/Bill_Anderson_Zra2wxz.2e16d0ba.fill-200x200.webp)">
+      </div>
+      <div class="m-author__body">
+       <h3 class="m-author__title">
+        Written by Bill Anderson
+       </h3>
+       <p class="m-author__job">
+        Knowledge &amp; Innovation Lead
+       </p>
+      </div>
+     </a>
+    </section>
+    <section class="section section--post">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset is-typeset--additionals wysiwyg">
+        <p>
+         With the arrival of the Covid-19 pandemic, Development initiatives (DI) recognised that there was an urgent but unmet need to assess how donors were responding to the crisis month on month. This required disaggregated, near real-time data. Our experience analysing the data available demonstrated once again the need for timely publication of quality data.
+        </p>
+        <p>
+         DI is well acquainted with the difficulty in getting near real-time data. For almost 30 years we have been number crunching data on humanitarian and development assistance. Our analysts are amongst the most experienced users of the Organisation for Economic Cooperation and Development (OECD)’s
+         <a href="https://stats.oecd.org/index.aspx?DataSetCode=CRS1">
+          Creditor Reporting System
+         </a>
+         (CRS), the arbiter of official development assistance statistics. But the CRS only provides data at two points in the year − top-line provisional aggregates in April, and detailed data at the end of the year.
+        </p>
+        <p>
+         DI is also very close to the
+         <a href="https://iatistandard.org/en/">
+          International Aid Transparency Initiative
+         </a>
+         (IATI). For the last 13 years, we have played a leading role in the development of the IATI standard, and are the technical lead within the IATI secretariat. More than 1,200 institutions now publish to the IATI standard.
+        </p>
+        <h2>
+         The benefits and challenges of near real-time data
+        </h2>
+        <p>
+         Until a year ago DI analysts had, for good reasons, been reluctant to use IATI data. Unlike the CRS, IATI is a voluntary standard. As such, despite gradual improvements, the data has never been comprehensive, and data quality has been patchy.
+        </p>
+        <p>
+         CRS and IATI data cannot be compared like-for-like. The CRS contains manually curated, annual statistics that are a country or institution's mandatory official submission to the OECD.
+         <a aria-describedby="note--KNZx92rF" href="#note--KNZx92rF" id="note-source--KNZx92rF">
+          <sup>
+           [1]
+          </sup>
+         </a>
+         IATI data is typically machine-generated from management information systems. What it lacks in formal authority it gains in its timeliness, forward-looking budget projections, transactions disaggregated by time/recipient/sector, and richer activity details including locations, results and documentation. The result being that while regular comparison of a selected basket of IATI publishers does not produce absolute aggregate numbers as the CRS does, it does show trends in portfolio make-up over time. It does so much closer to the moment those decisions are being made and, critically, creates more potential and time to engage and improve policy and decision-making.
+        </p>
+        <h2>
+         Using IATI data to analyse response to the Covid-19 pandemic
+        </h2>
+        <p>
+         Given the greater timeliness of IATI data, and knowing that our IATI team had been working closely with publishers to improve their data, we took another look. We found that 27 institutions, who between them recorded US$143 billion of spending in 2019, were publishing near real-time data of a quality good enough to use. By near real-time we mean activity data with financial transaction values disaggregated monthly (or at most quarterly) that are available two or three months in arrears. A further 18 institutions (with a combined spend of US$55 billion in 2019 ) publish data that, if handled with care, could also be used.
+         <a aria-describedby="note-LUj0Or6kL" href="#note-LUj0Or6kL" id="note-source-LUj0Or6kL">
+          <sup>
+           [2]
+          </sup>
+         </a>
+        </p>
+        <p>
+         In July 2020 we published our first analysis asking
+         <a href="/resources/how-are-aid-budgets-changing-due-covid-19-crisis/">
+          How are aid budgets changing due to the Covid-19 crisis?
+         </a>
+         This factsheet compared donor commitments for the first five months of 2020 with the corresponding months in 2019. This work has continued and we now produce monthly updates with interactive visualisations in our data tool:
+         <a href="/data/tracking-aid-flows-in-light-of-the-covid-19-crisis/">
+          Tracking aid flows in light of the Covid-19 crisis
+         </a>
+         . In June 2021, for example, we published data for the period April 2020−March 2021, and the corresponding period in the previous two years.
+        </p>
+        <h2>
+         What have we learnt from working with IATI data?
+        </h2>
+        <p>
+         Two of the biggest challenges facing users of IATI data were overcome early on in our work. Firstly, IATI encompasses the entire aid delivery chain. The same activity is therefore accounted for by multiple actors with resulting double counting. In an ideal world, the task of cross-checking flows between reporting organisations would be simple. Since that process has inherent complications, this problem is largely overcome by analysing bilaterals, international finance institutions and multilaterals separately as very few funds are disbursed within, rather than between, these groups.
+        </p>
+        <p>
+         Secondly, we soon discovered that there are differences between the quality of commitment and spend data across a number of large institutions. For example, Germany’s Federal Ministry for Economic Cooperation and Development produces accurate commitment data, but cumulates its spend across years. The United Nations Development Programme, meanwhile, has accurate spend data but cumulated commitment data. DI keeps a publisher reference table to record these anomalies and ensure that misleading data is automatically excluded from our selected baskets. From a near real-time data point of view, ensuring the accuracy of transaction dates is the biggest – and simplest – improvement that a number of large IATI publishers could make to improve the usability of their data.
+        </p>
+        <p>
+         Our model relies on consistent data over time from each of the selected publishers. Inconsistencies, particularly from large institutions, have the potential to undermine the credibility of this work. When, in April 2021, we came to summarise trends for 2020 as a whole, the discovery that the UK’s Foreign, Commonwealth &amp; Development Office commitment data had become unpredictable and US data (with the exception of data from USAID) had not been updated quarterly as usual brought us close to drawing misleading conclusions on overall bilateral trends.
+         <a aria-describedby="note-fVOEwL2G7" href="#note-fVOEwL2G7" id="note-source-fVOEwL2G7">
+          <sup>
+           [3]
+          </sup>
+         </a>
+        </p>
+        <p>
+         While the basket of publishers that we have been learning to work with is producing results, dangers lie in IATI’s lack of comprehensiveness. In preparation for forthcoming papers on domestic and international resourcing in Kenya, we had noted the increase in World Bank and African Development Bank loans to East Africa. At the same time there were protests on the streets of Nairobi about the government’s capacity to repay its debts. These were sparked, however, by a US$2 billion loan from the International Monetary Fund (IMF). The IMF is not currently publishing using the IATI standard, so we had to scrabble to download this data from the IMF website. Along with the IMF, Japan and South Korea are also lapsed publishers, creating significant holes in our analysis.
+        </p>
+        <p>
+         The challenge doesn’t end there. Increasingly both the CRS and IATI suffer from the lack of data from China and other emerging actors in the humanitarian and development world. And, with the exception of a few highly fragile states, the dependence of low-income countries on aid is diminishing year-by-year as other cross-border financial flows become increasingly important.
+        </p>
+        <h2>
+         What next?
+        </h2>
+        <p>
+         Where does this leave DI? How do we move forwards in using near real-time data with our credibility as resource flow analysts intact? Do we admit defeat and rely on the CRS’s rear-view mirror? Do we put our eggs in the incomplete, inconsistent IATI basket? Or do we think outside of the established boxes and rephrase the problem that we are trying to solve: How do we access
+         <b>
+          all
+         </b>
+         available data on cross-border resource flows in order to produce evidence that contributes to a better allocation of financial resources?
+        </p>
+        <p>
+         There are a couple of ways in which DI is looking to keep moving forward with this. We began working on interoperability some years back. Our Development Data Warehouse provides a one stop shop for our analysts to access data from the CRS, IATI, the
+         <a href="https://fts.unocha.org/">
+          UN OCHA’s Financial Tracking Service
+         </a>
+         , the
+         <a href="https://databank.worldbank.org/source/world-development-indicators">
+          World Bank’s World Development Indicators
+         </a>
+         and
+         <a href="http://iresearch.worldbank.org/PovcalNet/introduction.aspx">
+          PovcalNet
+         </a>
+         from a single, common, platform. It also houses our Spotlights on
+         <a href="/data/spotlight-kenya">
+          Kenya
+         </a>
+         and
+         <a href="/data/spotlight-uganda">
+          Uganda
+         </a>
+         which harvest subnational data from a range of official sources. Plans are in the pipeline for this joined-up service to be shared as a public good.
+        </p>
+        <p>
+         Most of our analysis of IATI data is done from a transactions table in which values are split according to IATI’s multi-recipient and multi-sector. We will use this table, and IATI’s architecture, as a base for including non-IATI data – harvested by our data scientists from an expanding spectrum of sources -- so that all near real-time transaction data can be accessed from a single source.
+        </p>
+        <p>
+         Globally, a more joined-up picture of flows could lead to less duplication of effort, better identification of gaps and mutual benefits between private and public investments. At a country level, integrating data on cross-border flows with domestic finances could rationalise and enhance national development planning.
+        </p>
+       </div>
+       <div class="m-notes">
+        <h3 class="m-notes__title">
+         Notes
+        </h3>
+        <ul class="m-notes__list">
+         <li>
+          <sup>
+           <a href="#note-source--KNZx92rF" id="note--KNZx92rF">
+            1
+           </a>
+          </sup>
+          The Netherlands is the only publisher, to our knowledge, that uses its IATI data to automatically generate its CRS submission.
+         </li>
+         <li>
+          <sup>
+           <a href="#note-source-LUj0Or6kL" id="note-LUj0Or6kL">
+            2
+           </a>
+          </sup>
+          Development Initiatives, 2020. How is aid changing in the Covid-19 pandemic? Available at:
+          <a href="http://www.devinit.org/resources/how-aid-changing-covid-19-pandemic/">
+           www.devinit.org/resources/how-aid-changing-covid-19-pandemic/
+          </a>
+         </li>
+         <li>
+          <sup>
+           <a href="#note-source-fVOEwL2G7" id="note-fVOEwL2G7">
+            3
+           </a>
+          </sup>
+          Up until July 2018 all of the Foreign, Commonwealth &amp; Development Office’s (formerly the Department for International Development) activities were published with their original commitments. This is no longer the case and it is therefore misleading to aggregate what commitment data does exist.
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="share space-section-bottom-med">
+       <div class="share__content">
+        <h2 class="type-m type-s--trailer">
+         <label for="shortUrl">
+          <b>
+           Share
+          </b>
+          Using near real-time data on aid flows: Lessons learnt
+         </label>
+        </h2>
+        <div class="share__wrapper" data-id="" data-js="">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page with Facebook / Using near real-time data on aid flows: Lessons learnt / /blog/using-near-real-time-data-aid-flows-lessons-learnt/" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/blog/using-near-real-time-data-aid-flows-lessons-learnt/" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with Twitter / Using near real-time data on aid flows: Lessons learnt / /blog/using-near-real-time-data-aid-flows-lessons-learnt/" href="https://twitter.com/intent/tweet/?text=Using%20near%20real-time%20data%20on%20aid%20flows%3A%20Lessons%20learnt&amp;url=https%3A//devinit.org/blog/using-near-real-time-data-aid-flows-lessons-learnt/" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with LinkedIn / Using near real-time data on aid flows: Lessons learnt / /blog/using-near-real-time-data-aid-flows-lessons-learnt/" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/blog/using-near-real-time-data-aid-flows-lessons-learnt/&amp;title=Using%20near%20real-time%20data%20on%20aid%20flows%3A%20Lessons%20learnt" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/blog/using-near-real-time-data-aid-flows-lessons-learnt/"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <h2 class="section__heading">
+       Related content
+      </h2>
+      <div class="l-2up-3up">
+       <a class="card card--offset" href="/data/tracking-aid-international-development-real-time/?nav=more-about">
+        <span class="card__tag">
+         Data tool
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/Town_of_Balakot__north_of_Islamabad_the_foot.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          30 June 2023
+         </span>
+         <h3 class="card__title">
+          <span>
+           Tracking aid and other international development finance in real time
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p data-block-key="ay41p">
+           This interactive data tool lets you track commitments and disbursements of aid and other global development finance between January 2018 and April 2023.
+          </p>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/resources/aid-data-2019-2020-analysis-trends-before-during-covid/?nav=more-about">
+        <span class="card__tag">
+         Briefing
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/A_rickshaw_driver_waits_for_passengers._Kara.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          8 February 2021
+         </span>
+         <h3 class="card__title">
+          <span>
+           Aid data 2019–2020: Analysis of trends before and during Covid
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p data-block-key="lejpp">
+           What key shifts in donors, sectors, targeting and loans during the Covid pandemic are highlighted by new DAC data on 2019 ODA and 2020 aid figures from IATI?
+          </p>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/blog/strengthening-data-driven-transparency-response-covid-19/?nav=more-about">
+        <span class="card__tag">
+         Blog
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/49932667097_e729532d23_k.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          4 June 2020
+         </span>
+         <h3 class="card__title">
+          <span>
+           Strengthening data-driven transparency in response to Covid-19
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p>
+           Liz Steele and Mark Brough share DI's experience of developing a new Covid-19 data visualisation, including incentives for organisations to improve the quality of the data they are publishing.
+          </p>
+         </div>
+         <div class="m-author">
+          <div class="m-author__image" style="background-image:url(/media/images/Liz_Steele.2e16d0ba.fill-200x200-c100.jpg)">
+          </div>
+          <div class="m-author__body">
+           <h3 class="m-author__title">
+            Written by Liz Steele
+           </h3>
+           <p class="m-author__job">
+            Fellow
+           </p>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="footer" role="contentinfo">
+    <div class="row">
+     <div class="l-footer">
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Sign up for our newsletter to receive regular news and updates
+       </h4>
+       <a class="button" href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f">
+        Subscribe here
+       </a>
+       <h4 class="footer__title" style="padding-top: 2em;">
+        Cookie preferences
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a id="change_cookie_preferences">
+         </a>
+         <a class="button" href="#" onclick="document.cookie = 'cookie_notice=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload();">
+          Change preferences
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get around
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/who-we-are/?nav=footer">
+          Who we are
+         </a>
+        </li>
+        <li>
+         <a href="/what-we-do/?nav=footer">
+          What we do
+         </a>
+        </li>
+        <li>
+         <a href="/how-we-work/?nav=footer">
+          How we work
+         </a>
+        </li>
+        <li>
+         <a href="/resources/?nav=footer">
+          Resources
+         </a>
+        </li>
+        <li>
+         <a href="/blog/?nav=footer">
+          Blog
+         </a>
+        </li>
+        <li>
+         <a href="/events/?nav=footer">
+          Events
+         </a>
+        </li>
+        <li>
+         <a href="/data/?nav=footer">
+          Data
+         </a>
+        </li>
+        <li>
+         <a href="/work-for-us/?nav=footer">
+          Work for us
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get in touch
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/contact-us/?nav=footer">
+          Contact us
+         </a>
+        </li>
+        <li>
+         <a href="/media-centre/?nav=footer">
+          Media centre
+         </a>
+        </li>
+       </ul>
+       <ul class="footer__social">
+        <li>
+         <a href="https://twitter.com/devinitorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.facebook.com/Development.Initiatives/">
+          <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/company/development-initiatives">
+          <img alt="Share with Linkedin" src="/assets/svg/source/linkedin.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.youtube.com/channel/UCPo5N2Ac5ZOVB7Ao0NsKMIQ">
+          <img alt="Share with Youtube" src="/assets/svg/source/youtube.svg"/>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.flickr.com/photos/development_initiatives">
+          <img alt="Share with Flickr" src="/assets/svg/source/flickr.svg"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Policies and statements
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/policies-and-statements/modern-slavery-and-human-trafficking-statement/?nav=footer">
+          Modern slavery and human trafficking statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/privacy-and-cookies-policy/?nav=footer">
+          Privacy and cookies policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/responsible-employer-and-business-ethics-statement/?nav=footer">
+          Responsible employer and business ethics statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/income-acceptance-policy/?nav=footer">
+          Income acceptance policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/equality-diversity-inclusion-statement/?nav=footer">
+          Equality, Diversity &amp; Inclusion statement
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="footer__meta">
+      <div class="footer__meta-copy footer__meta-copy--major">
+       <p data-block-key="bgfyy">
+        © Copyright 2024 Development initiatives. Content produced by Development Initiatives is licensed under a
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+         Creative Commons Attribution BY-NC-ND 4.0 International license
+        </a>
+        , unless stated otherwise on an image or page.
+       </p>
+      </div>
+      <div class="footer__meta-copy">
+       <p data-block-key="argqe">
+        Development Initiatives is the trading name of Development Initiatives Poverty Research Ltd, registered in England and Wales, Company No. 06368740; DI International Ltd, registered in England and Wales, Company No. 5802543, Registered Address: First Floor Centre, The Quorum, Bond Street South, Bristol, BS1 3AE, UK; and Development Initiatives Poverty Research America Inc. (a 501(C)3 company registered in the state of Delaware with the registration number 5737757), Registered Address: 1209 Orange Street, Wilmington, New Castle County, Delaware 19801.
+       </p>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="/assets/js/app.bundle.js">
+  </script>
+  <script src="/assets/notice/js/bundle.js">
+  </script>
+  <script>
+   document.querySelectorAll('[data-type=anchor]').forEach((elt) => {
+    elt.setAttribute('id', elt.dataset.id);
+  });
+  </script>
+  <script src="/assets/blog/js/bundle.js">
+  </script>
+  
+ </body>
+</html>

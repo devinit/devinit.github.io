@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en-GB">
+ <!--<![endif]-->
+ <head>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH32T6V');
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   What do we know about the value of data? - Development Initiatives
+  </title>
+  <link href="/assets/css/screen.min.css" media="screen, print" rel="stylesheet"/>
+  <link disabled="" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"/>
+  <script defer="">
+   /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+	grunticon(["/assets/icons/ico.data.svg.css", "/assets/icons/ico.data.png.css", "/assets/icons/ico.fallback.css"]);
+  </script>
+  <noscript>
+   <link href="/assets/icons/ico.fallback.css" rel="stylesheet"/>
+  </noscript>
+  <script defer="" src="/assets/js/libs/modernizr.js">
+  </script>
+  <link href="/assets/favicons/favicon.webp" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/css/di_website.min.css" media="screen, print" rel="stylesheet">
+   <meta content="summary_large_image" name="twitter:card"/>
+   <meta content="What do we know about the value of data? — Development Initiatives" name="twitter:title"/>
+   <meta content="What do we know about the value of data?" name="twitter:description"/>
+   <meta content="/media/images/Poverty-website-image.2e16d0ba.fill-800x450.jpg" name="twitter:image"/>
+   <meta content="/blog/what-do-we-know-about-the-value-of-data/" property="og:url">
+    <meta content="What do we know about the value of data?" property="og:title">
+     <meta content="What do we know about the value of data?" property="og:description">
+      <meta content="Development Initiatives" property="og:site_name">
+       <meta content="/media/images/Poverty-website-image.2e16d0ba.fill-800x450.jpg" property="og:image">
+        <meta content="/blog/what-do-we-know-about-the-value-of-data/" itemprop="url">
+         <meta content="What do we know about the value of data? — Development Initiatives" itemprop="name"/>
+         <meta content="What do we know about the value of data?" itemprop="description">
+          <meta content="/media/images/Poverty-website-image.2e16d0ba.fill-800x450.jpg" itemprop="image"/>
+          <meta content="What do we know about the value of data?" name="description"/>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </link>
+ </head>
+ <body class="body body--" id="body-">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NH32T6V" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div class="ui-base">
+   <input name="csrfmiddlewaretoken" type="hidden" value="6S16lLb31bn0Hb8rgjw2Kgb9Kwe4MpQboWquS8FM9SwpzWJQykYsQ4f5i6WPxfpn"/>
+   <div class="notice__wrapper notice__wrapper--notice display-none" data-notice="" id="cookie_notice">
+    <div class="row">
+     <div class="notice__content">
+      <p>
+       We use cookies on our website to help us understand how you use the site and to make improvements. These may be used to track your visit to our website or to enable us to personalise your browsing experience, and they may be shared with Google Analytics so that your data can be processed. For more information, please visit our Privacy and cookies policy page
+      </p>
+      <button class="button button--reverse" data-notice-accept-all="" id="cookie_notice">
+       Accept all cookies
+      </button>
+      <button class="button button--reverse" data-notice-accept-necessary="" id="cookie_notice">
+       Accept necessary cookies
+      </button>
+      <p>
+       You can change your preferences at any time by clicking the button at the bottom of this page.
+      </p>
+     </div>
+    </div>
+   </div>
+   <a class="skiplink" data-js="skiplink" href="#pagecontent">
+    Skip to main content
+   </a>
+   <header class="header" role="banner">
+    <div class="row">
+     <a class="branding" href="/">
+      Development Initiatives
+     </a>
+     <button class="navigation-primary-toggle" id="navigation-primary-toggle" role="button">
+      <span>
+       Menu
+      </span>
+     </button>
+     <nav class="navigation-primary" id="navigation-primary" role="navigation">
+      <ul class="navigation-primary__items">
+       <li class="navigation-primary__item">
+        <a href="/who-we-are/?nav=header">
+         Who we are
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/what-we-do/?nav=header">
+         What we do
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/how-we-work/?nav=header">
+         How we work
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/resources/?nav=header">
+         Resources
+        </a>
+       </li>
+       <li class="navigation-primary__item navigation-primary__item--active">
+        <a href="/blog/?nav=header">
+         Blog
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/events/?nav=header">
+         Events
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/data/?nav=header">
+         Data
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/work-for-us/?nav=header">
+         Work for us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main class="pagecontent -nofocus" id="pagecontent" role="main" tabindex="-1">
+    <section class="hero hero--image">
+     <div class="hero__image" id="ric57407">
+      <style scoped="">
+       @media all and (min-width: 1px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-400x300-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-400x300-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-800x600.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-400x300-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-800x600.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 400px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-500x280-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-500x280-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-1000x560.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-500x280-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-1000x560.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 500px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-780x230-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-780x230-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-1560x460.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-780x230-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-1560x460.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 780px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-1000x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1000x435-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-2000x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1000x435-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-2000x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1000px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-1350x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1350x435-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-2700x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1350x435-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-2700x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1350px) {
+                #ric57407 {
+                    background-image: url(/media/images/Poverty-website-image.2e16d0ba.fill-1800x430-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1800x430-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-3600x860.jpg") 2x);
+                    background-image: image-set(url("/media/images/Poverty-website-image.2e16d0ba.fill-1800x430-c100.jpg") 1x, url("/media/images/Poverty-website-image.2e16d0ba.fill-3600x860.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+      </style>
+     </div>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <div class="row row--narrow">
+      <div class="hero__content">
+       <ul class="hero__meta">
+        <li class="hero__meta-item hero__meta-item--block">
+         Blog
+        </li>
+        <li class="hero__meta-item">
+         4 May 2018
+        </li>
+       </ul>
+       <h1 class="hero__title">
+        <span>
+         What do we know about the value of data?
+        </span>
+       </h1>
+       <div class="hero__excerpt">
+        <p>
+         The GPSDD concludes the best way to make the case for improved investments in data is to show the value of data in improving lives.
+        </p>
+       </div>
+      </div>
+     </div>
+     <a class="m-author" href="/who-we-are/our-team/bill-anderson/?referrer=author">
+      <div class="m-author__image" style="background-image: url(/media/images/Bill_Anderson_Zra2wxz.2e16d0ba.fill-200x200.webp)">
+      </div>
+      <div class="m-author__body">
+       <h3 class="m-author__title">
+        Written by Bill Anderson
+       </h3>
+       <p class="m-author__job">
+        Knowledge &amp; Innovation Lead
+       </p>
+      </div>
+     </a>
+    </section>
+    <section class="section section--post">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset is-typeset--additionals wysiwyg">
+        <p>
+         <a href="http://www.data4sdgs.org/news/what-do-we-know-about-value-data">
+          In an excellent new paper
+         </a>
+         by Jenna Slotin, the Global Partnership for Sustainable Development Data (GPSDD) concludes that the best way to make the case for improved investments in data is “to show the concrete impacts of data on improving people’s lives, or how a failure to invest in data holds back progress.”
+        </p>
+        <p>
+         GPSDD sees this as a cornerstone of its work. The paper concludes:
+        </p>
+        <p>
+         “Going forward, the Global Partnership for Sustainable Development Data will support efforts to compile stories of data impact that make a clear link to return on investment. We will build on the work of our partners and encourage anyone to contact us with stories they would like to share. We will package these stories and use them in our advocacy as we make the case for more and better financing for data.”
+        </p>
+        <p>
+         DI is up for this challenge and identifies five key areas to search out evidence:
+        </p>
+        <ul>
+         <li>
+          The integration of digital birth registration with national identity streamlines children’s access to services
+         </li>
+         <li>
+          Accurate, disaggregated data on cause of death leads to better distribution of critical resources within the health service
+         </li>
+         <li>
+          Accurate and timely data from facility-level health management information systems improves the resourcing and staffing of rural health services
+         </li>
+         <li>
+          Accurate and timely data from school-level education management information systems improves school attendance by girls
+         </li>
+         <li>
+          Transforming agricultural censuses into regularly collected administrative data improves production.
+         </li>
+        </ul>
+        <p>
+         Read more about our work on
+         <a href="/themes/use/">
+          data use
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="share space-section-bottom-med">
+       <div class="share__content">
+        <h2 class="type-m type-s--trailer">
+         <label for="shortUrl">
+          <b>
+           Share
+          </b>
+          What do we know about the value of data?
+         </label>
+        </h2>
+        <div class="share__wrapper" data-id="" data-js="">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page with Facebook / What do we know about the value of data? / /blog/what-do-we-know-about-the-value-of-data/" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/blog/what-do-we-know-about-the-value-of-data/" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with Twitter / What do we know about the value of data? / /blog/what-do-we-know-about-the-value-of-data/" href="https://twitter.com/intent/tweet/?text=What%20do%20we%20know%20about%20the%20value%20of%20data%3F&amp;url=https%3A//devinit.org/blog/what-do-we-know-about-the-value-of-data/" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with LinkedIn / What do we know about the value of data? / /blog/what-do-we-know-about-the-value-of-data/" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/blog/what-do-we-know-about-the-value-of-data/&amp;title=What%20do%20we%20know%20about%20the%20value%20of%20data%3F" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/blog/what-do-we-know-about-the-value-of-data/"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <h2 class="section__heading">
+       Related content
+      </h2>
+      <div class="l-2up-3up">
+       <a class="card card--offset" href="/blog/priorities-uks-incoming-secretary-state-alok-sharma/?nav=more-about">
+        <span class="card__tag">
+         Blog
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/Alok_Sharma.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          25 July 2019
+         </span>
+         <h3 class="card__title">
+          <span>
+           Priorities for the UK’s incoming Secretary of State Alok Sharma
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p>
+           As Alok Sharma takes office as Secretary of State, DI's Amy Dodd sets out key priorities for the UK and its global development agenda.
+          </p>
+         </div>
+         <div class="m-author">
+          <div class="m-author__image" style="background-image:url(/media/images/Amy_Dodd.2e16d0ba.fill-200x200-c100.jpg)">
+          </div>
+          <div class="m-author__body">
+           <h3 class="m-author__title">
+            Written by Amy Dodd
+           </h3>
+           <p class="m-author__job">
+            Head of Engagement
+           </p>
+          </div>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/blog/review-delivery-global-goals-immediate-priorities-uk-government/?nav=more-about">
+        <span class="card__tag">
+         Blog
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/UK-aid-shelter-kits-being-unloaded_Mozambiqu.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          18 July 2019
+         </span>
+         <h3 class="card__title">
+          <span>
+           From review to delivery on the Global Goals – what should the immediate priorities be for the UK government?
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p>
+           On 26 June, the UK government published its Voluntary National Review measuring delivery against the Global Goals - but does it accurately capture progress?
+          </p>
+         </div>
+         <div class="m-author">
+          <div class="m-author__image" style="background-image:url(/media/images/Professional_headshot_2020_SV.2e16d0ba.fill-200x200-c100.jpg)">
+          </div>
+          <div class="m-author__body">
+           <h3 class="m-author__title">
+            Written by Harpinder Collacott
+           </h3>
+           <p class="m-author__job">
+            Chief Executive Officer
+           </p>
+          </div>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/blog/closing-the-gap-meeting-the-challenge-to-leave-no-one-behind/?nav=more-about">
+        <span class="card__tag">
+         Blog
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/DIs_Response_to_UKs_VNR.max-400x250.jpg);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          10 July 2019
+         </span>
+         <h3 class="card__title">
+          <span>
+           Three priorities for the High-level Political Forum 2019
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p>
+           DI Director of Partnerships &amp; Engagement Carolyn Culey sets out three key priorities for closing the gap between the poorest and the rest at HLPF 2019
+          </p>
+         </div>
+         <div class="m-author">
+          <div class="m-author__image" style="background-image:url(/media/images/Carolyn_Culey_ZwOruOt.2e16d0ba.fill-200x200-c100.jpg)">
+          </div>
+          <div class="m-author__body">
+           <h3 class="m-author__title">
+            Written by Carolyn Culey
+           </h3>
+           <p class="m-author__job">
+            Director of Partnerships &amp; Engagement
+           </p>
+          </div>
+         </div>
+        </div>
+       </a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="footer" role="contentinfo">
+    <div class="row">
+     <div class="l-footer">
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Sign up for our newsletter to receive regular news and updates
+       </h4>
+       <a class="button" href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f">
+        Subscribe here
+       </a>
+       <h4 class="footer__title" style="padding-top: 2em;">
+        Cookie preferences
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a id="change_cookie_preferences">
+         </a>
+         <a class="button" href="#" onclick="document.cookie = 'cookie_notice=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload();">
+          Change preferences
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get around
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/who-we-are/?nav=footer">
+          Who we are
+         </a>
+        </li>
+        <li>
+         <a href="/what-we-do/?nav=footer">
+          What we do
+         </a>
+        </li>
+        <li>
+         <a href="/how-we-work/?nav=footer">
+          How we work
+         </a>
+        </li>
+        <li>
+         <a href="/resources/?nav=footer">
+          Resources
+         </a>
+        </li>
+        <li>
+         <a href="/blog/?nav=footer">
+          Blog
+         </a>
+        </li>
+        <li>
+         <a href="/events/?nav=footer">
+          Events
+         </a>
+        </li>
+        <li>
+         <a href="/data/?nav=footer">
+          Data
+         </a>
+        </li>
+        <li>
+         <a href="/work-for-us/?nav=footer">
+          Work for us
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get in touch
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/contact-us/?nav=footer">
+          Contact us
+         </a>
+        </li>
+        <li>
+         <a href="/media-centre/?nav=footer">
+          Media centre
+         </a>
+        </li>
+       </ul>
+       <ul class="footer__social">
+        <li>
+         <a href="https://twitter.com/devinitorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.facebook.com/Development.Initiatives/">
+          <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/company/development-initiatives">
+          <img alt="Share with Linkedin" src="/assets/svg/source/linkedin.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.youtube.com/channel/UCPo5N2Ac5ZOVB7Ao0NsKMIQ">
+          <img alt="Share with Youtube" src="/assets/svg/source/youtube.svg"/>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.flickr.com/photos/development_initiatives">
+          <img alt="Share with Flickr" src="/assets/svg/source/flickr.svg"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Policies and statements
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/policies-and-statements/modern-slavery-and-human-trafficking-statement/?nav=footer">
+          Modern slavery and human trafficking statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/privacy-and-cookies-policy/?nav=footer">
+          Privacy and cookies policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/responsible-employer-and-business-ethics-statement/?nav=footer">
+          Responsible employer and business ethics statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/income-acceptance-policy/?nav=footer">
+          Income acceptance policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/equality-diversity-inclusion-statement/?nav=footer">
+          Equality, Diversity &amp; Inclusion statement
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="footer__meta">
+      <div class="footer__meta-copy footer__meta-copy--major">
+       <p data-block-key="bgfyy">
+        © Copyright 2024 Development initiatives. Content produced by Development Initiatives is licensed under a
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+         Creative Commons Attribution BY-NC-ND 4.0 International license
+        </a>
+        , unless stated otherwise on an image or page.
+       </p>
+      </div>
+      <div class="footer__meta-copy">
+       <p data-block-key="argqe">
+        Development Initiatives is the trading name of Development Initiatives Poverty Research Ltd, registered in England and Wales, Company No. 06368740; DI International Ltd, registered in England and Wales, Company No. 5802543, Registered Address: First Floor Centre, The Quorum, Bond Street South, Bristol, BS1 3AE, UK; and Development Initiatives Poverty Research America Inc. (a 501(C)3 company registered in the state of Delaware with the registration number 5737757), Registered Address: 1209 Orange Street, Wilmington, New Castle County, Delaware 19801.
+       </p>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="/assets/js/app.bundle.js">
+  </script>
+  <script src="/assets/notice/js/bundle.js">
+  </script>
+  <script>
+   document.querySelectorAll('[data-type=anchor]').forEach((elt) => {
+    elt.setAttribute('id', elt.dataset.id);
+  });
+  </script>
+  <script src="/assets/blog/js/bundle.js">
+  </script>
+  
+ </body>
+</html>

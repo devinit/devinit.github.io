@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en-GB">
+ <!--<![endif]-->
+ <head>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH32T6V');
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   How the DAC rules are changing and why you should care - Development Initiatives
+  </title>
+  <link href="/assets/css/screen.min.css" media="screen, print" rel="stylesheet"/>
+  <link disabled="" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"/>
+  <script defer="">
+   /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+	grunticon(["/assets/icons/ico.data.svg.css", "/assets/icons/ico.data.png.css", "/assets/icons/ico.fallback.css"]);
+  </script>
+  <noscript>
+   <link href="/assets/icons/ico.fallback.css" rel="stylesheet"/>
+  </noscript>
+  <script defer="" src="/assets/js/libs/modernizr.js">
+  </script>
+  <link href="/assets/favicons/favicon.webp" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/css/di_website.min.css" media="screen, print" rel="stylesheet">
+   <meta content="summary_large_image" name="twitter:card"/>
+   <meta content="How the DAC rules are changing and why you should care — Development Initiatives" name="twitter:title"/>
+   <meta content="The DAC is soon to change the way that PSI are counted as ODA. How are the measurements different, and what does it mean for the quantity and quality of ODA?" name="twitter:description"/>
+   <meta content="/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-800x450.webp" name="twitter:image"/>
+   <meta content="/resources/dac-rules-changing-psi-oda/" property="og:url">
+    <meta content="How the DAC rules are changing and why you should care" property="og:title">
+     <meta content="The DAC is soon to change the way that PSI are counted as ODA. How are the measurements different, and what does it mean for the quantity and quality of ODA?" property="og:description">
+      <meta content="Development Initiatives" property="og:site_name">
+       <meta content="/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-800x450.webp" property="og:image">
+        <meta content="/resources/dac-rules-changing-psi-oda/" itemprop="url">
+         <meta content="How the DAC rules are changing and why you should care — Development Initiatives" itemprop="name"/>
+         <meta content="The DAC is soon to change the way that PSI are counted as ODA. How are the measurements different, and what does it mean for the quantity and quality of ODA?" itemprop="description">
+          <meta content="/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-800x450.webp" itemprop="image"/>
+          <meta content="The DAC is soon to change the way that PSI are counted as ODA. How are the measurements different, and what does it mean for the quantity and quality of ODA?" name="description"/>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </link>
+ </head>
+ <body class="body body--" id="body-">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NH32T6V" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div class="ui-base">
+   <input name="csrfmiddlewaretoken" type="hidden" value="hLrFS8fGiw0AkahnEiE6mvVrwUF3vvnGAIoHkaai4HD2InJtjbii0VqVePlgwL73"/>
+   <div class="notice__wrapper notice__wrapper--notice display-none" data-notice="" id="cookie_notice">
+    <div class="row">
+     <div class="notice__content">
+      <p>
+       We use cookies on our website to help us understand how you use the site and to make improvements. These may be used to track your visit to our website or to enable us to personalise your browsing experience, and they may be shared with Google Analytics so that your data can be processed. For more information, please visit our Privacy and cookies policy page
+      </p>
+      <button class="button button--reverse" data-notice-accept-all="" id="cookie_notice">
+       Accept all cookies
+      </button>
+      <button class="button button--reverse" data-notice-accept-necessary="" id="cookie_notice">
+       Accept necessary cookies
+      </button>
+      <p>
+       You can change your preferences at any time by clicking the button at the bottom of this page.
+      </p>
+     </div>
+    </div>
+   </div>
+   <a class="skiplink" data-js="skiplink" href="#pagecontent">
+    Skip to main content
+   </a>
+   <header class="header" role="banner">
+    <div class="row">
+     <a class="branding" href="/">
+      Development Initiatives
+     </a>
+     <button class="navigation-primary-toggle" id="navigation-primary-toggle" role="button">
+      <span>
+       Menu
+      </span>
+     </button>
+     <nav class="navigation-primary" id="navigation-primary" role="navigation">
+      <ul class="navigation-primary__items">
+       <li class="navigation-primary__item">
+        <a href="/who-we-are/?nav=header">
+         Who we are
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/what-we-do/?nav=header">
+         What we do
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/how-we-work/?nav=header">
+         How we work
+        </a>
+       </li>
+       <li class="navigation-primary__item navigation-primary__item--active">
+        <a href="/resources/?nav=header">
+         Resources
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/blog/?nav=header">
+         Blog
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/events/?nav=header">
+         Events
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/data/?nav=header">
+         Data
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/work-for-us/?nav=header">
+         Work for us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main class="pagecontent -nofocus" id="pagecontent" role="main" tabindex="-1">
+    <section class="hero hero--image">
+     <div class="hero__image" id="ri725425">
+      <style scoped="">
+       @media all and (min-width: 1px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-400x300-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-400x300-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-800x600.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-400x300-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-800x600.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 400px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-500x280-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-500x280-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1000x560.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-500x280-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1000x560.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 500px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-780x230-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-780x230-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1560x460.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-780x230-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1560x460.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 780px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1000x435-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1000x435-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-2000x870.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1000x435-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-2000x870.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1000px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1350x435-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1350x435-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-2700x870.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1350x435-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-2700x870.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1350px) {
+                #ri725425 {
+                    background-image: url(/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1800x430-c100.webp);
+                    background-image: -webkit-image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1800x430-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-3600x860.webp") 2x);
+                    background-image: image-set(url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-1800x430-c100.webp") 1x, url("/media/images/52921544776_42921f5ac0_k.2e16d0ba.fill-3600x860.webp") 2x);
+                    background-position-y: center;
+                }
+            }
+      </style>
+     </div>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <div class="row row--narrow">
+      <div class="hero__content">
+       <ul class="hero__meta">
+        <li class="hero__meta-item hero__meta-item--block">
+         Presentation
+        </li>
+        <li class="hero__meta-item">
+         16 November 2023
+        </li>
+       </ul>
+       <h1 class="hero__title">
+        <span>
+         How the DAC rules are changing and why you should care
+        </span>
+       </h1>
+      </div>
+     </div>
+    </section>
+    <section class="section section--post">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="m-authors">
+        <h3 class="m-authors__title">
+         Participant
+        </h3>
+        <p class="m-authors__copy">
+         <a href="/who-we-are/our-team/euan-ritchie/?referrer=author">
+          Euan Ritchie
+         </a>
+        </p>
+       </div>
+       <div class="space-section-both">
+        <div class="cta">
+         <h2 class="cta__heading">
+          Keep in touch
+         </h2>
+         <p class="cta__excerpt">
+          Find out about future events by signing up to our newsletters
+         </p>
+         <a class="button button--reverse" href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f" target="_blank">
+          Sign up
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         The Development Assistance Committee (DAC) is soon to change the way that private sector instruments (PSIs) are counted as official development assistance (ODA). These rule changes will bring welcome improvements in transparency, and ensure that countries provide clear arguments about why they consider PSIs are likely to have impact.
+        </p>
+        <p>
+         However, the new rules are also likely to:
+        </p>
+        <ul>
+         <li>
+          Expand the definition of ODA to include more private-sector-oriented activities, and so increase headline ODA without necessarily any increase in donor effort;
+         </li>
+         <li>
+          Worsen the inconsistencies between the two ways PSIs are measured;
+         </li>
+         <li>
+          and risk giving an incentive for donors to move further away from grant financing.
+         </li>
+        </ul>
+        <p>
+         This event aimed to help CSOs and other organisations by:
+        </p>
+        <ul>
+         <li>
+          Providing an overview of the changes made in the ODA reporting of PSIs so that they can better understand the expected impact on the quantity and quality of ODA in the years to come and, thus, the importance of monitoring PSI ODA in the future.
+         </li>
+         <li>
+          Demonstrating analytically why the two measurement methods currently in use are likely to give different results in practice, and what this implies about comparing effort between donors.
+         </li>
+        </ul>
+        <p>
+         The event was moderated by Åsa Thomasson, Policy and Advocacy Coordinator at CONCORD Sweden.
+        </p>
+        <p>
+         The event featured remarks and discussions from the following panellists:
+        </p>
+        <ul>
+         <li>
+          Nerea Craviotto, Senior Policy and Advocacy Officer - Aid Effectiveness, Eurodad
+         </li>
+         <li>
+          <a href="/who-we-are/our-team/euan-ritchie/">
+           Euan Ritchie
+          </a>
+          , Senior Development Finance Policy Advisor, Development Initiatives
+         </li>
+        </ul>
+        <p>
+         There was a longer ‘question and answer’ session to provide further information after the initial presentations and discussion. These questions and answers are provided below. Watch the event recording and read the responses to the Q&amp;A below.
+        </p>
+        <hr/>
+        <p>
+         ► Read more from DI about
+         <a href="/resources/?types=&amp;topic=oda-aid&amp;country=&amp;SOURCE=BAR">
+          ODA (aid)
+         </a>
+        </p>
+        <p>
+         ► Share your thoughts with us on
+         <a href="https://twitter.com/devinitorg">
+          Twitter
+         </a>
+         or
+         <a href="https://www.linkedin.com/company/development-initiatives/">
+          LinkedIn
+         </a>
+        </p>
+        <p>
+         ► Sign up to our
+         <a href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f">
+          newsletter
+         </a>
+        </p>
+        <hr/>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="is-typeset">
+       <div>
+        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="113" src="https://www.youtube.com/embed/slKjiO5l3mM?feature=oembed" title="How the DAC rules are changing and why you should care" width="200">
+        </iframe>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         These questions were typed and answered in the chat during the presentation (with some additions made after the event).
+        </p>
+        <p>
+         <b>
+          Q. How are the private institutions selected?
+         </b>
+        </p>
+        <p>
+         A. It is mostly Development Finance Institutions (DFIs), from members of the DAC, plus the European Investment Bank. DFIs are typically set up as state-owned, profitable companies or development banks that provide loans or invest in projects with development purposes. In some cases we find operations reported for Climate Funds, or other thematic funds. In theory, DFIs should provide loans, guarantees or equity at better than market rates and to riskier investments than commercial banks or investors would be able to. In practice, that is not always the outcome. DFIs can provide finance to public or private sector actors.
+        </p>
+        <p>
+         <b>
+          Q. Would development impact reporting amount to non-financial additionality?
+         </b>
+        </p>
+        <p>
+         A. If referring to whether development impact alone would be sufficient to justify additionality - not really. It is correct that development additionality has to do with expected development impact, but this is only to be reported to the DAC in a written description of the assessments done before the project, so it is not sufficient to be able to report a PSI as Official Development Assistance. Financial additionality and/ or value additionality are mandatory categories to report (see below), and
+         <a href="https://one.oecd.org/document/DCD/DAC/STAT(2023)9/ADD3/FINAL/en/pdf">
+          defined by the DAC
+         </a>
+         as follows (but the definitions are still quite vague and open to interpretation, as we discussed in the webinar).
+        </p>
+        <ul>
+         <li>
+          ‘Financial additionality’ refers to financing provided in cases where private sector partners are unable to obtain commercial financing owing to the high-risk nature of the investment. Financial additionality aims to avoid market distortion i.e. institutions do not compete with other commercial finance providers, but rather support capital-constrained markets, and, where possible, crowd in investments.
+         </li>
+         <li>
+          ‘Value additionality’ refers to the specific role and comparative advantage of public institutions as a partner to the private sector, conveyed through non-financial contributions such as provision of knowledge and expertise, board participation and links to local networks.
+         </li>
+         <li>
+          Value additionality is a key contributor to improving the quality of investments and business operations from a development perspective. Public institutions ensure the inclusion of safeguards, good corporate governance and foster more socially responsible businesses over time in a way that other investors typically would not.
+         </li>
+         <li>
+          Both financial and value additionality should seek to avoid market distortions.
+         </li>
+        </ul>
+        <p>
+         <b>
+          Q. Why are Germany, Spain, and Switzerland not sharing this information? Is this data not collected by these countries?
+         </b>
+        </p>
+        <p>
+         A. In some cases there is insufficient communication between DFIs and the governments, who are the ones in charge of reporting to the OECD. Because, in some cases, France with Proparco, for example, the website provides relevant information that could be used in the context of the data to be reported to the OECD. In other cases, DFIs (being companies investing in other private companies) argue the need for business confidentiality, and do not publish the same quantity and quality of information as the governmental development cooperation institutions. A third possible reason is that DFIs employ financial and investment specialists, not development cooperation professionals, so they may be less accustomed to reporting on the development aspects of an investment.
+        </p>
+        <p>
+         <b>
+          Q. If I understand correctly, PSI flows have been reported under provisional directives (as no agreement on the grant equivalent method had been reached). Do you have any information on whether these provisional flows be revised in the future? Especially, will return flows eventually be deducted from loans reported as PSI in the GE reporting system?
+         </b>
+        </p>
+        <p>
+         A. My understanding is that there won't be a review of the flows already reported, or only exceptionally. This means that there have been five years of ODA reporting where the controls, transparency and comparability of PSI reporting has been minimal.
+        </p>
+        <p>
+         <b>
+          Q. Most DFIs report on development impact. If that would count as non financial additionality I wonder why there is so little data available on additionality at OECD level as indicated by the first presenter
+         </b>
+         A. See the answer about value additionality above. Development impact will not by itself be enough to claim that a PSI investment is additional.
+        </p>
+        <p>
+         <b>
+          Q. I wonder if the participants have followed the OECD's modernisation process for the Arrangement of official export credits - and whether there was any crossover in these modernisation processes, and whether there will be a deeper convergence on overlap between what DFIs and what ECAs provide and their operations?
+         </b>
+        </p>
+        <p>
+         A. My worry is yes, because giving up on concessionality blurs the line between the two type of operations. It is definitely something to be vigilant about.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="share space-section-bottom-med">
+       <div class="share__content">
+        <h2 class="type-m type-s--trailer">
+         <label for="shortUrl">
+          <b>
+           Share
+          </b>
+          How the DAC rules are changing and why you should care
+         </label>
+        </h2>
+        <div class="share__wrapper" data-id="" data-js="">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page with Facebook / How the DAC rules are changing and why you should care / /resources/dac-rules-changing-psi-oda/" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/resources/dac-rules-changing-psi-oda/" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with Twitter / How the DAC rules are changing and why you should care / /resources/dac-rules-changing-psi-oda/" href="https://twitter.com/intent/tweet/?text=How%20the%20DAC%20rules%20are%20changing%20and%20why%20you%20should%20care&amp;url=https%3A//devinit.org/resources/dac-rules-changing-psi-oda/" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with LinkedIn / How the DAC rules are changing and why you should care / /resources/dac-rules-changing-psi-oda/" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/resources/dac-rules-changing-psi-oda/&amp;title=How%20the%20DAC%20rules%20are%20changing%20and%20why%20you%20should%20care" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/resources/dac-rules-changing-psi-oda/"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <h2 class="section__heading">
+       Related content
+      </h2>
+      <div class="l-2up-3up">
+       <a class="card card--offset" href="/resources/ODA-financing-climate-gender-disability-interface-facts/?nav=more-about">
+        <span class="card__tag">
+         Factsheet
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/Hope_is_a_third-grade_teacher_in_a_communit.max-400x250.webp);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          27 September 2024
+         </span>
+         <h3 class="card__title">
+          <span>
+           ODA financing the climate–gender–disability interface: Key facts
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p data-block-key="ssam9">
+           Donors and African domestic budget allocators must consider the impact of climate change on women and girls with disabilities when making financing decisions
+          </p>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/resources/aid-effectiveness-in-uganda-social-protection-in-focus/?nav=more-about">
+        <span class="card__tag">
+         Report
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/senior_citizens_uganda_cash_transfer_DFID.max-400x250.webp);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          23 May 2024
+         </span>
+         <h3 class="card__title">
+          <span>
+           Aid effectiveness in Uganda: Social protection in focus
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p data-block-key="tk3sj">
+           This report analyses ODA's role in delivering social protection in Uganda. It examines the success of an aid-recipient programme and presents lessons for donors.
+          </p>
+         </div>
+        </div>
+       </a>
+       <a class="card card--offset" href="/resources/gender-focused-oda-health-and-agriculture-ethiopia/?nav=more-about">
+        <span class="card__tag">
+         Report
+        </span>
+        <div class="card__media" style="background-image: url(/media/images/Health_extension_worker_-min.max-400x250.webp);">
+        </div>
+        <div class="card__body">
+         <span class="card__meta">
+          31 January 2024
+         </span>
+         <h3 class="card__title">
+          <span>
+           Gender-focused ODA to health and agriculture in Ethiopia
+          </span>
+         </h3>
+         <div class="card__excerpt">
+          <p data-block-key="zfbr2">
+           This report looks at the use of ODA in programmes with a gender focus in the health and agriculture sectors in Ethiopia, and how an enabling environment can be fostered for development outcomes.
+          </p>
+         </div>
+        </div>
+       </a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="footer" role="contentinfo">
+    <div class="row">
+     <div class="l-footer">
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Sign up for our newsletter to receive regular news and updates
+       </h4>
+       <a class="button" href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f">
+        Subscribe here
+       </a>
+       <h4 class="footer__title" style="padding-top: 2em;">
+        Cookie preferences
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a id="change_cookie_preferences">
+         </a>
+         <a class="button" href="#" onclick="document.cookie = 'cookie_notice=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload();">
+          Change preferences
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get around
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/who-we-are/?nav=footer">
+          Who we are
+         </a>
+        </li>
+        <li>
+         <a href="/what-we-do/?nav=footer">
+          What we do
+         </a>
+        </li>
+        <li>
+         <a href="/how-we-work/?nav=footer">
+          How we work
+         </a>
+        </li>
+        <li>
+         <a href="/resources/?nav=footer">
+          Resources
+         </a>
+        </li>
+        <li>
+         <a href="/blog/?nav=footer">
+          Blog
+         </a>
+        </li>
+        <li>
+         <a href="/events/?nav=footer">
+          Events
+         </a>
+        </li>
+        <li>
+         <a href="/data/?nav=footer">
+          Data
+         </a>
+        </li>
+        <li>
+         <a href="/work-for-us/?nav=footer">
+          Work for us
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get in touch
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/contact-us/?nav=footer">
+          Contact us
+         </a>
+        </li>
+        <li>
+         <a href="/media-centre/?nav=footer">
+          Media centre
+         </a>
+        </li>
+       </ul>
+       <ul class="footer__social">
+        <li>
+         <a href="https://twitter.com/devinitorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.facebook.com/Development.Initiatives/">
+          <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/company/development-initiatives">
+          <img alt="Share with Linkedin" src="/assets/svg/source/linkedin.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.youtube.com/channel/UCPo5N2Ac5ZOVB7Ao0NsKMIQ">
+          <img alt="Share with Youtube" src="/assets/svg/source/youtube.svg"/>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.flickr.com/photos/development_initiatives">
+          <img alt="Share with Flickr" src="/assets/svg/source/flickr.svg"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Policies and statements
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/policies-and-statements/modern-slavery-and-human-trafficking-statement/?nav=footer">
+          Modern slavery and human trafficking statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/privacy-and-cookies-policy/?nav=footer">
+          Privacy and cookies policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/responsible-employer-and-business-ethics-statement/?nav=footer">
+          Responsible employer and business ethics statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/income-acceptance-policy/?nav=footer">
+          Income acceptance policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/equality-diversity-inclusion-statement/?nav=footer">
+          Equality, Diversity &amp; Inclusion statement
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="footer__meta">
+      <div class="footer__meta-copy footer__meta-copy--major">
+       <p data-block-key="bgfyy">
+        © Copyright 2024 Development initiatives. Content produced by Development Initiatives is licensed under a
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+         Creative Commons Attribution BY-NC-ND 4.0 International license
+        </a>
+        , unless stated otherwise on an image or page.
+       </p>
+      </div>
+      <div class="footer__meta-copy">
+       <p data-block-key="argqe">
+        Development Initiatives is the trading name of Development Initiatives Poverty Research Ltd, registered in England and Wales, Company No. 06368740; DI International Ltd, registered in England and Wales, Company No. 5802543, Registered Address: First Floor Centre, The Quorum, Bond Street South, Bristol, BS1 3AE, UK; and Development Initiatives Poverty Research America Inc. (a 501(C)3 company registered in the state of Delaware with the registration number 5737757), Registered Address: 1209 Orange Street, Wilmington, New Castle County, Delaware 19801.
+       </p>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="/assets/js/app.bundle.js">
+  </script>
+  <script src="/assets/notice/js/bundle.js">
+  </script>
+  <script>
+   document.querySelectorAll('[data-type=anchor]').forEach((elt) => {
+    elt.setAttribute('id', elt.dataset.id);
+  });
+  </script>
+  
+ </body>
+</html>

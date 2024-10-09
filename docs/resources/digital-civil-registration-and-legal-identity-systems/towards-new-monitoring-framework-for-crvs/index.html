@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en-GB" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en-GB">
+ <!--<![endif]-->
+ <head>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH32T6V');
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Towards a new monitoring framework for CRVS - Development Initiatives
+  </title>
+  <link href="/assets/css/screen.min.css" media="screen, print" rel="stylesheet"/>
+  <link disabled="" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet"/>
+  <script defer="">
+   /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+!function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+	grunticon(["/assets/icons/ico.data.svg.css", "/assets/icons/ico.data.png.css", "/assets/icons/ico.fallback.css"]);
+  </script>
+  <noscript>
+   <link href="/assets/icons/ico.fallback.css" rel="stylesheet"/>
+  </noscript>
+  <script defer="" src="/assets/js/libs/modernizr.js">
+  </script>
+  <link href="/assets/favicons/favicon.webp" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/assets/css/di_website.min.css" media="screen, print" rel="stylesheet">
+   <meta content="summary_large_image" name="twitter:card"/>
+   <meta content="Towards a new monitoring framework for CRVS — Development Initiatives" name="twitter:title"/>
+   <meta content="Is there an effective framework to monitor global commitments on CRVS? What can we learn from efforts to improve the quality of registrations in India?" name="twitter:description"/>
+   <meta content="/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvoi.5f7c4994.fill-800x450.jpg" name="twitter:image"/>
+   <meta content="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/" property="og:url">
+    <meta content="Towards a new monitoring framework for CRVS" property="og:title">
+     <meta content="Is there an effective framework to monitor global commitments on CRVS? What can we learn from efforts to improve the quality of registrations in India?" property="og:description">
+      <meta content="Development Initiatives" property="og:site_name">
+       <meta content="/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvoi.5f7c4994.fill-800x450.jpg" property="og:image">
+        <meta content="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/" itemprop="url">
+         <meta content="Towards a new monitoring framework for CRVS — Development Initiatives" itemprop="name"/>
+         <meta content="Is there an effective framework to monitor global commitments on CRVS? What can we learn from efforts to improve the quality of registrations in India?" itemprop="description">
+          <meta content="/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvoi.5f7c4994.fill-800x450.jpg" itemprop="image"/>
+          <meta content="Is there an effective framework to monitor global commitments on CRVS? What can we learn from efforts to improve the quality of registrations in India?" name="description"/>
+         </meta>
+        </meta>
+       </meta>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </link>
+ </head>
+ <body class="body body-- body--sunflower" id="body-">
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NH32T6V" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <div class="ui-base">
+   <input name="csrfmiddlewaretoken" type="hidden" value="f3GcUkSwldqRZSdnCvairsatyw9b2oSARtlJjb7eiC38om2MowIAbgOk7LBCKi1H"/>
+   <div class="notice__wrapper notice__wrapper--notice display-none" data-notice="" id="cookie_notice">
+    <div class="row">
+     <div class="notice__content">
+      <p>
+       We use cookies on our website to help us understand how you use the site and to make improvements. These may be used to track your visit to our website or to enable us to personalise your browsing experience, and they may be shared with Google Analytics so that your data can be processed. For more information, please visit our Privacy and cookies policy page
+      </p>
+      <button class="button button--reverse" data-notice-accept-all="" id="cookie_notice">
+       Accept all cookies
+      </button>
+      <button class="button button--reverse" data-notice-accept-necessary="" id="cookie_notice">
+       Accept necessary cookies
+      </button>
+      <p>
+       You can change your preferences at any time by clicking the button at the bottom of this page.
+      </p>
+     </div>
+    </div>
+   </div>
+   <a class="skiplink" data-js="skiplink" href="#pagecontent">
+    Skip to main content
+   </a>
+   <header class="header" role="banner">
+    <div class="row">
+     <a class="branding" href="/">
+      Development Initiatives
+     </a>
+     <button class="navigation-primary-toggle" id="navigation-primary-toggle" role="button">
+      <span>
+       Menu
+      </span>
+     </button>
+     <nav class="navigation-primary" id="navigation-primary" role="navigation">
+      <ul class="navigation-primary__items">
+       <li class="navigation-primary__item">
+        <a href="/who-we-are/?nav=header">
+         Who we are
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/what-we-do/?nav=header">
+         What we do
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/how-we-work/?nav=header">
+         How we work
+        </a>
+       </li>
+       <li class="navigation-primary__item navigation-primary__item--active">
+        <a href="/resources/?nav=header">
+         Resources
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/blog/?nav=header">
+         Blog
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/events/?nav=header">
+         Events
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/data/?nav=header">
+         Data
+        </a>
+       </li>
+       <li class="navigation-primary__item">
+        <a href="/work-for-us/?nav=header">
+         Work for us
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main class="pagecontent -nofocus" id="pagecontent" role="main" tabindex="-1">
+    <section class="hero hero--image">
+     <div class="hero__image" id="ri6e7d99">
+      <style scoped="">
+       @media all and (min-width: 1px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-400x300-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-400x300-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvoi.5f7c4994.fill-800x600.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-400x300-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvoi.5f7c4994.fill-800x600.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 400px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-500x280-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-500x280-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-1000x560.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-500x280-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-1000x560.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 500px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-780x230-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-780x230-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-1560x460.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_.5f7c4994.fill-780x230-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-1560x460.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 780px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1000x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1000x435-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-2000x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1000x435-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-2000x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1000px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1350x435-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1350x435-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-2700x870.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1350x435-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-2700x870.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+
+        
+            @media all and (min-width: 1350px) {
+                #ri6e7d99 {
+                    background-image: url(/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1800x430-c100.jpg);
+                    background-image: -webkit-image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1800x430-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-3600x860.jpg") 2x);
+                    background-image: image-set(url("/media/images/4_-_Doctor_Kouakoussi_-_Cote.5f7c4994.fill-1800x430-c100.jpg") 1x, url("/media/images/4_-_Doctor_Kouakoussi_-_Cote_dIvo.5f7c4994.fill-3600x860.jpg") 2x);
+                    background-position-y: center;
+                }
+            }
+      </style>
+     </div>
+     <span class="hero__credit">
+      Image by
+      <a href="https://www.flickr.com/photos/worldbank/1196394448" target="_blank">
+       Ami Vitale / World Bank
+      </a>
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <span class="hero__flourish">
+     </span>
+     <div class="row row--narrow">
+      <div class="hero__content">
+       <ul class="hero__meta">
+        <li class="hero__meta-item hero__meta-item--block">
+         Report
+        </li>
+        <li class="hero__meta-item">
+         27 March 2020
+        </li>
+       </ul>
+       <h2 class="hero__subtitle">
+        Digital civil registration and legal identity systems: A joined-up approach to leave no one behind: Chapter 4
+       </h2>
+       <h1 class="hero__title">
+        <span>
+         Towards a new monitoring framework for CRVS
+        </span>
+       </h1>
+       <a class="button button--reverse" href="#downloads">
+        Downloads
+       </a>
+      </div>
+     </div>
+    </section>
+    <div class="js-chapter-nav">
+     <div class="page__action">
+      <div class="page__action__pagination">
+       <a class="page__action__previous" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/">
+        <i aria-hidden="true" class="ico ico--16 ico-arrow-left-blank" role="presentation">
+        </i>
+       </a>
+       <span class="page-action__section">
+        chapter 4
+       </span>
+       <a class="page__action__next" href="/resources/digital-civil-registration-and-legal-identity-systems/conclusions-and-recommendations/">
+        <i aria-hidden="true" class="ico ico--16 ico-arrow-right-blank" role="presentation">
+        </i>
+       </a>
+      </div>
+      <div class="page__action__menu">
+       <span class="page__action_text" tabindex="0">
+        Contents
+       </span>
+       <div class="page__action__burgerWrapper">
+        <div class="burger burger--reverse">
+         <span>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="chapter-nav-wrapper">
+      <div class="row__nojs">
+       <nav aria-label="navigation" class="chapter-nav" role="navigation">
+        <div class="chapter-scroll">
+         <ul class="chapter-nav__list">
+          <a class="button button--summary button--a11y" href="/resources/digital-civil-registration-and-legal-identity-systems/" title="View full publication">
+           <i aria-hidden="true" class="ico ico--16 ico-list-poppy" role="presentation">
+           </i>
+           <span>
+            View full publication
+           </span>
+          </a>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" href="/resources/digital-civil-registration-and-legal-identity-systems/executive-summary/" tabindex="-1">
+            <span class="chapter-title">
+             executive summary
+            </span>
+            <span class="chapter-nav__title">
+             Executive summary
+            </span>
+           </a>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" href="/resources/digital-civil-registration-and-legal-identity-systems/introduction/" tabindex="-1">
+            <span class="chapter-title">
+             chapter one
+            </span>
+            <span class="chapter-nav__title">
+             Introduction
+            </span>
+           </a>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" data-has-sections="3" href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/" tabindex="-1">
+            <span class="chapter-title">
+             chapter two
+            </span>
+            <span class="chapter-nav__title">
+             Birth registration coverage for poor and disadvantaged people
+            </span>
+           </a>
+           <button class="chapter-nav__child-toggle js-chapter-toggle" tabindex="-1" type="button">
+            <i aria-hidden="true" class="ico ico--18 ico-arrow-down-blank" role="presentation">
+            </i>
+           </button>
+           <ul class="chapter-nav__child">
+            <li class="chapter-nav__button">
+             <a class="button button--a11y button--reverse js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/" tabindex="-1" title="Read whole chapter">
+              <span>
+               Read whole chapter
+              </span>
+             </a>
+             <ul class="chapter-nav__child__overflow">
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/#section-2-1" tabindex="-1">
+                <span class="chapter-sub-title">
+                 2.1
+                </span>
+                <span class="chapter-nav__title--child">
+                 Birth registration and poverty
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/#section-2-2" tabindex="-1">
+                <span class="chapter-sub-title">
+                 2.2
+                </span>
+                <span class="chapter-nav__title--child">
+                 Birth registration and education level
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/#section-2-3" tabindex="-1">
+                <span class="chapter-sub-title">
+                 2.3
+                </span>
+                <span class="chapter-nav__title--child">
+                 The impact of intersecting factors
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" data-has-sections="3" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/" tabindex="-1">
+            <span class="chapter-title">
+             chapter three
+            </span>
+            <span class="chapter-nav__title">
+             Delivering digital CRVS and legal identity systems
+            </span>
+           </a>
+           <button class="chapter-nav__child-toggle js-chapter-toggle" tabindex="-1" type="button">
+            <i aria-hidden="true" class="ico ico--18 ico-arrow-down-blank" role="presentation">
+            </i>
+           </button>
+           <ul class="chapter-nav__child">
+            <li class="chapter-nav__button">
+             <a class="button button--a11y button--reverse js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/" tabindex="-1" title="Read whole chapter">
+              <span>
+               Read whole chapter
+              </span>
+             </a>
+             <ul class="chapter-nav__child__overflow">
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/#section-3-1" tabindex="-1">
+                <span class="chapter-sub-title">
+                 3.1
+                </span>
+                <span class="chapter-nav__title--child">
+                 Progress so far
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/#section-3-2" tabindex="-1">
+                <span class="chapter-sub-title">
+                 3.2
+                </span>
+                <span class="chapter-nav__title--child">
+                 Digital solutions
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/#section-3-3" tabindex="-1">
+                <span class="chapter-sub-title">
+                 3.3
+                </span>
+                <span class="chapter-nav__title--child">
+                 Legal identity
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" data-current-chapter="4" data-has-sections="3" href="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/" tabindex="-1">
+            <span class="chapter-title">
+             chapter four
+            </span>
+            <span class="chapter-nav__title">
+             Towards a new monitoring framework for CRVS
+            </span>
+           </a>
+           <button class="chapter-nav__child-toggle js-chapter-toggle" tabindex="-1" type="button">
+            <i aria-hidden="true" class="ico ico--18 ico-arrow-down-blank" role="presentation">
+            </i>
+           </button>
+           <ul class="chapter-nav__child">
+            <li class="chapter-nav__button">
+             <a class="button button--a11y button--reverse js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/" tabindex="-1" title="Read whole chapter">
+              <span>
+               Read whole chapter
+              </span>
+             </a>
+             <ul class="chapter-nav__child__overflow">
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/#section-4-1" tabindex="-1">
+                <span class="chapter-sub-title">
+                 4.1
+                </span>
+                <span class="chapter-nav__title--child">
+                 Shortcomings in household survey data
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/#section-4-2" tabindex="-1">
+                <span class="chapter-sub-title">
+                 4.2
+                </span>
+                <span class="chapter-nav__title--child">
+                 System-based monitoring
+                </span>
+               </a>
+              </li>
+              <li>
+               <a class="chapter-nav-link--child js-chapter-link" href="/resources/digital-civil-registration-and-legal-identity-systems/towards-new-monitoring-framework-for-crvs/#section-4-3" tabindex="-1">
+                <span class="chapter-sub-title">
+                 4.3
+                </span>
+                <span class="chapter-nav__title--child">
+                 Beyond monitoring: linking CRVS to service delivery
+                </span>
+               </a>
+              </li>
+             </ul>
+            </li>
+           </ul>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" href="/resources/digital-civil-registration-and-legal-identity-systems/conclusions-and-recommendations/" tabindex="-1">
+            <span class="chapter-title">
+             chapter five
+            </span>
+            <span class="chapter-nav__title">
+             Conclusions and recommendations
+            </span>
+           </a>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" href="/resources/digital-civil-registration-and-legal-identity-systems/abbreviations-and-acronyms/" tabindex="-1">
+            <span class="chapter-title">
+             appendix one
+            </span>
+            <span class="chapter-nav__title">
+             Abbreviations and acronyms
+            </span>
+           </a>
+          </li>
+          <li class="chapter-nav__item">
+           <a class="chapter-nav-link" href="/resources/digital-civil-registration-and-legal-identity-systems/methodology/" tabindex="-1">
+            <span class="chapter-title">
+             appendix two
+            </span>
+            <span class="chapter-nav__title">
+             Methodology
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+       </nav>
+      </div>
+     </div>
+    </div>
+    <section class="section section--post reduce_section_margins">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg is-typeset--additionals">
+        <p>
+         The analysis presented in
+         <a href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/">
+          Chapter 2
+         </a>
+         uses disaggregated data to counter the accepted narrative of progress in relation to civil registration and vital statistics (CRVS), which is based on broad aggregated national estimates. While this analysis produces some relevant insights, it is insufficient because of various shortcomings in the survey data.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="section-chapter" id="section-4-1">
+       <div class="max-meter max-meter--center">
+        <a class="section-chapter__link" data-id="section-4-1" data-js="share-section-trigger" href="#section-4-1">
+         <i aria-hidden="true" class="ico ico--16 ico-link-sunflower" role="presentation">
+         </i>
+         Share section
+        </a>
+        <div class="share__wrapper" data-id="section-4-1" data-js="share-section">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section with Facebook / Shortcomings in household survey data / /8c5406#section-4-1" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406%23section-4-1" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with Twitter / Shortcomings in household survey data / /8c5406#section-4-1" href="https://twitter.com/intent/tweet/?text=Shortcomings%20in%20household%20survey%20data&amp;url=https%3A//devinit.org/8c5406%23section-4-1" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with LinkedIn / Shortcomings in household survey data / /8c5406#section-4-1" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406%23section-4-1&amp;title=Shortcomings%20in%20household%20survey%20data" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406#section-4-1"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+        <h2 class="section-chapter__heading">
+         Shortcomings in household survey data
+        </h2>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section reduce_section_margins">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         Household surveys omit the most vulnerable populations by design. Only considering households means that CRVS data on those living outside traditional household settings – including undocumented nationals, refugees or migrants and those living in institutions – is simply missing.
+        </p>
+        <p>
+         Timeliness is also an important issue. USAID’s Demographic and Health Survey (DHS) and UNICEF’s Multiple Indicators Cluster Surveys (MICS) are typically conducted once every three to five years and the microdata is usually released two years thereafter. With progress being made on digital registration as outlined in
+         <a href="/resources/digital-civil-registration-and-legal-identity-systems/delivering-digital-crvs-and-legal-identity-systems/">
+          Chapter 3
+         </a>
+         , household survey data is not timely enough to inform planning and target resources.
+        </p>
+        <p>
+         In addition to the missing populations, the survey data as it currently stands does not provide the level of detail required to inform the planning and implementation of CRVS systems; track the progress towards digitisation and interoperability with other foundational systems; or provide the detailed subnational information for health and local government administrators to plan and target their interventions more accurately and in a cost-effective manner.
+        </p>
+        <p>
+         Survey data also lacks detail on the timeliness of the registration itself, as this information is not captured by the standard questions used on surveys. For example, standard survey results show little difference between the birth registration rates of boys and girls as they are based on a question which asks whether children aged under five within the households have been registered. Recent research from Mexico highlighted a gender bias against girls, with the registration of girls more likely to be delayed until school age, while boys are typically registered nearer to birth. This is important as delayed registration is associated with incomplete, incorrect and unreliable information.
+         <a aria-describedby="note-SVBqgQyVT" href="#note-SVBqgQyVT" id="note-source-SVBqgQyVT">
+          <sup>
+           [1]
+          </sup>
+         </a>
+        </p>
+        <p>
+         Another issue is that the two main global datasets on birth registration provide substantially different results and it is not clear which one is more authoritative. Recent analysis by Development Initiatives (DI) on Africa
+         <a aria-describedby="note-zeXnPz2Nw" href="#note-zeXnPz2Nw" id="note-source-zeXnPz2Nw">
+          <sup>
+           [2]
+          </sup>
+         </a>
+         considered these two databases, one maintained by UNICEF
+         <a aria-describedby="note-YaZ6Uo55a" href="#note-YaZ6Uo55a" id="note-source-YaZ6Uo55a">
+          <sup>
+           [3]
+          </sup>
+         </a>
+         and one by the UN Statistics Division.
+         <a aria-describedby="note-_1eK5biVN" href="#note-_1eK5biVN" id="note-source-_1eK5biVN">
+          <sup>
+           [4]
+          </sup>
+         </a>
+         Over one third (35%) of countries had discrepancies between the two systems. Some of these were the result of different sources being used, but a number had different values recorded, despite coming from the same source.
+        </p>
+        <p>
+         There are also significant concerns about the quality of the data generated by questions from household surveys. For example, the household head may not understand the difference between birth notification and birth registration or whether the birth certificate is linked to a legal identity. In this instance, important information about whether the birth is recorded in a national database or whether the paper certificate is the only lifetime proof of identity that the child has would not be captured.
+        </p>
+        <p>
+         Given these issues, it seems appropriate to question our reliance on standard household survey data to monitor birth registration coverage.
+        </p>
+        <p>
+         “
+         <i>
+          While data coverage has improved over time, this has largely been the result of investment in collecting data on birth registration in low- and middle-income countries through household surveys. In fact, in the absence of reliable administrative records, household surveys have become a key source of data to monitor levels and trends in birth registration. While it is clear that household surveys provide a rich source of valuable data, there are a number of problems if we continue to rely on surveys to monitor our progress towards complete civil registration coverage
+         </i>
+         .” - UNICEF, 2019.
+         <a aria-describedby="note-16uvF8vlD" href="#note-16uvF8vlD" id="note-source-16uvF8vlD">
+          <sup>
+           [5]
+          </sup>
+         </a>
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="section-chapter" id="section-4-2">
+       <div class="max-meter max-meter--center">
+        <a class="section-chapter__link" data-id="section-4-2" data-js="share-section-trigger" href="#section-4-2">
+         <i aria-hidden="true" class="ico ico--16 ico-link-sunflower" role="presentation">
+         </i>
+         Share section
+        </a>
+        <div class="share__wrapper" data-id="section-4-2" data-js="share-section">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section with Facebook / System-based monitoring / /8c5406#section-4-2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406%23section-4-2" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with Twitter / System-based monitoring / /8c5406#section-4-2" href="https://twitter.com/intent/tweet/?text=System-based%20monitoring&amp;url=https%3A//devinit.org/8c5406%23section-4-2" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with LinkedIn / System-based monitoring / /8c5406#section-4-2" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406%23section-4-2&amp;title=System-based%20monitoring" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406#section-4-2"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+        <h2 class="section-chapter__heading">
+         System-based monitoring
+        </h2>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section reduce_section_margins">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         Most developing countries are now making steady progress in their development of national registries and administrative data. These systems, by their nature, contain a built-in monitoring framework. In this new monitoring framework, all performance statistics should be sourced wherever possible from cleaned, aggregated counts of records stored within the national CRVS and ID registries, or from considered, documented estimates produced by senior officials within the registration agencies. Monitoring the experience of detailed implementation would provide valuable global lessons on how to reach those being left behind. It would free up resources so that household surveys could be used to collect data that cannot be captured elsewhere and ensure that monitoring is owned, maintained and accounted for by those responsible for securing sustainable data infrastructures.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <a class="section-chapter__link" data-id="c6b66aca" data-js="share-section-trigger" href="#c6b66aca">
+       <i aria-hidden="true" class="ico ico--16 ico-link-sunflower" role="presentation">
+       </i>
+       Share
+box
+      </a>
+      <div class="share__wrapper" data-id="c6b66aca" data-js="share-section">
+       <ul class="share__media">
+        <li class="share__item">
+         <a class="js-social-share" data-event-category="Share" data-event-label="Share box with Facebook / Using statistics to improve quality of registrations in India / /8c5406#c6b66aca" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406%23c6b66aca" target="_blank">
+          <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+         </a>
+        </li>
+        <li class="share__item">
+         <a class="js-social-share" data-event-category="Share" data-event-label="Share box  with Twitter / Using statistics to improve quality of registrations in India / /8c5406#c6b66aca" href="https://twitter.com/intent/tweet/?text=Using%20statistics%20to%20improve%20quality%20of%20registrations%20in%20India&amp;url=https%3A//devinit.org/8c5406%23c6b66aca" target="_blank">
+          <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+         </a>
+        </li>
+        <li class="share__item">
+         <a class="js-social-share" data-event-category="Share" data-event-label="Share box  with LinkedIn / Using statistics to improve quality of registrations in India / /8c5406#c6b66aca" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406%23c6b66aca&amp;title=Using%20statistics%20to%20improve%20quality%20of%20registrations%20in%20India" target="_blank">
+          <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+         </a>
+        </li>
+       </ul>
+       <div class="share__copy">
+        <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406#c6b66aca"/>
+        <button class="button js-copy-trigger">
+         Copy
+        </button>
+       </div>
+      </div>
+      <div class="pullout" id="c6b66aca">
+       <div class="max-meter max-meter--center">
+        <div class="pullout__heading-wrapper">
+         <h2 class="pullout__heading heading type-xxl">
+          Case Study
+         </h2>
+        </div>
+       </div>
+       <div class="max-meter max-meter--center">
+        <div class="pullout__content pullout__content--first is-typeset">
+         <h1>
+          Using statistics to improve quality of registrations in India
+         </h1>
+        </div>
+       </div>
+       <div class="max-meter max-meter--center">
+        <div class="pullout__content is-typeset">
+         <p>
+          Evidence from India shows that the production of vital statistics even from incomplete registration systems can be extremely valuable. India has established an institutional mechanism for routinely assessing levels of completeness for birth and death registrations at the national, state and district levels and publishes these in its annual vital statistics report.
+          <a aria-describedby="note-5cpLC1qla" href="#note-5cpLC1qla" id="note-source-5cpLC1qla">
+           <sup>
+            [6]
+           </sup>
+          </a>
+          This mechanism helps identify underperforming areas and therefore drives resources to improve the coverage and quality of registrations and also develops capability and expertise to produce better quality statistics.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section reduce_section_margins">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         In October 2019, DI proposed a new
+         <a href="/resources/measuring-civil-registration-legal-identity/">
+          sustainable and accountable monitoring framework
+         </a>
+         that is governed by the implementing countries.
+         <a aria-describedby="note-pS391qppx" href="#note-pS391qppx" id="note-source-pS391qppx">
+          <sup>
+           [7]
+          </sup>
+         </a>
+         Reporting directly from the CRVS system itself as implementation occurs, it would track actual registrations in a timely manner as well as building capability to produce vital statistics. Data from household surveys and national household and population censuses should continue to be used for quality assurance and sense checking of the new data sources.
+        </p>
+        <p>
+         As more and more countries adopt national databases to manage their registries the aggregation of performance indicators becomes an automated process, making timely, annual reporting a feasible option. Annual reporting will not only shine a light on progress within a timescale that is meaningful to policymakers, but over time it will ensure that exaggerated and inaccurate reporting is either eradicated or made transparent to those seeking to hold the registration agencies to account.
+        </p>
+        <p>
+         With statistics being drawn from the primary data source, national registration agencies – supported by national statistics offices – should be empowered to maintain both ownership of and accountability for the monitoring process. National registration agencies should be responsible for the timely and accurate validation and production of the required statistics. National statistics offices should be responsible for coordinating, collating and reviewing the data received from their partner agencies.
+        </p>
+        <p>
+         Table 2 shows a simple annual country monitoring framework proposed by DI. It contains six questions relating to the development of CRVS and ID systems, and their interoperability. The framework aggregates data from these systems in order to track a range of indicators.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset is-typeset--article">
+        <h3>
+         Table 2: Proposed monitoring framework
+        </h3>
+       </div>
+       <div class="table-styled">
+        <table>
+         <thead>
+          <tr>
+           <th scope="col">
+            Country:
+           </th>
+           <th scope="col">
+            Year:
+           </th>
+           <th scope="col">
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td>
+            Is there an operational CRVS system?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of population with births registered
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            Percentage of births registered in last year
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Is there a digital national registry
+            <br/>
+            of births?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of population with births digitally registered
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            Percentage of births digitally registered last year
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Is digital data captured at the point
+            <br/>
+            of birth registration?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of birth registrars using digital data capture
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Is there a national ID system?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of population with ID numbers
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            Percentage of population issued ID numbers in last year
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Is digital data captured at point of
+            <br/>
+            ID registration?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of ID registrars using digital data capture
+           </td>
+           <td>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            Is an ID number issued at the same
+            <br/>
+            time as birth registration?
+            <br/>
+            [YES / NO / PLANNED]
+           </td>
+           <td>
+            Percentage of newborns in last year with digital birth certificate and ID number
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <figcaption class="media-caption">
+        <p>
+         Source: Development Initiatives, 2019. Measuring the state of civil registration and legal identity. Available at: http://devinit.org/wp-content/uploads/2019/10/measuring-the-state-of-civil-registration-and-legal-identity.pdf
+        </p>
+       </figcaption>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="section-chapter" id="section-4-3">
+       <div class="max-meter max-meter--center">
+        <a class="section-chapter__link" data-id="section-4-3" data-js="share-section-trigger" href="#section-4-3">
+         <i aria-hidden="true" class="ico ico--16 ico-link-sunflower" role="presentation">
+         </i>
+         Share section
+        </a>
+        <div class="share__wrapper" data-id="section-4-3" data-js="share-section">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section with Facebook / Beyond monitoring: linking CRVS to service delivery / /8c5406#section-4-3" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406%23section-4-3" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with Twitter / Beyond monitoring: linking CRVS to service delivery / /8c5406#section-4-3" href="https://twitter.com/intent/tweet/?text=Beyond%20monitoring%3A%20linking%20CRVS%20to%20service%20delivery&amp;url=https%3A//devinit.org/8c5406%23section-4-3" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share section  with LinkedIn / Beyond monitoring: linking CRVS to service delivery / /8c5406#section-4-3" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406%23section-4-3&amp;title=Beyond%20monitoring%3A%20linking%20CRVS%20to%20service%20delivery" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406#section-4-3"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+        <h2 class="section-chapter__heading">
+         Beyond monitoring: linking CRVS to service delivery
+        </h2>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section reduce_section_margins">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center">
+       <div class="is-typeset wysiwyg">
+        <p>
+         There is a tendency within the development community to focus on the use of data solely for monitoring and evaluation. This approach often overlooks the fact that data is needed more urgently in order to inform action, so that the Sustainable Development Goals (SDGs) are met by 2030, not just monitored. Universal digital registration of births is not only about identifying dispossessed communities that are being left behind – it is about empowering those communities through better access to services.
+        </p>
+        <p>
+         The findings in
+         <a href="/resources/digital-civil-registration-and-legal-identity-systems/survey-data-birth-registration-coverage/">
+          Chapter 2
+         </a>
+         illustrate the complexities of registering those furthest left behind. For legal identity to have an impact on vulnerable communities, it needs to result in improved access to services. From a data point of view, improved service delivery requires the three foundational information systems – education, health and civil registration – to be embedded in every school, clinic and registry office and for the data collected and the point of service delivery to be shared as usable information in the same locality (see Figure 11).
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="max-meter max-meter--center responsive-graph" id="34aa27e0">
+       <div class="infographic-link-parent">
+        <a class="section-chapter__link" data-id="34aa27e0" data-js="share-section-trigger" href="#34aa27e0">
+         <i aria-hidden="true" class="ico ico--16 ico-link-sunflower" role="presentation">
+         </i>
+         Share
+chart
+        </a>
+       </div>
+       <div class="share__wrapper" data-id="34aa27e0" data-js="share-section">
+        <ul class="share__media">
+         <li class="share__item">
+          <a class="js-social-share" data-event-category="Share" data-event-label="Share chart with Facebook / Figure 11: First steps for a sustainable data ecosystem to improve service delivery / /8c5406#34aa27e0" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406%2334aa27e0" target="_blank">
+           <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+          </a>
+         </li>
+         <li class="share__item">
+          <a class="js-social-share" data-event-category="Share" data-event-label="Share chart  with Twitter / Figure 11: First steps for a sustainable data ecosystem to improve service delivery / /8c5406#34aa27e0" href="https://twitter.com/intent/tweet/?text=Figure%2011%3A%20First%20steps%20for%20a%20sustainable%20data%20ecosystem%20to%20improve%20service%20delivery&amp;url=https%3A//devinit.org/8c5406%2334aa27e0" target="_blank">
+           <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+          </a>
+         </li>
+         <li class="share__item">
+          <a class="js-social-share" data-event-category="Share" data-event-label="Share chart  with LinkedIn / Figure 11: First steps for a sustainable data ecosystem to improve service delivery / /8c5406#34aa27e0" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406%2334aa27e0&amp;title=Figure%2011%3A%20First%20steps%20for%20a%20sustainable%20data%20ecosystem%20to%20improve%20service%20delivery" target="_blank">
+           <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+          </a>
+         </li>
+        </ul>
+        <div class="share__copy">
+         <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406#34aa27e0"/>
+         <button class="button js-copy-trigger">
+          Copy
+         </button>
+        </div>
+       </div>
+       <h2 class="type-l type-l--trailer">
+        Figure 11: First steps for a sustainable data ecosystem to improve service delivery
+       </h2>
+       <figure>
+        <a href="/media/images/Figure_11.width-1200.jpg" target="_blank" title="Click to open image in new window">
+         <picture>
+          <source media="(min-width: 780px)" srcset="/media/images/Figure_11.width-1200.jpg 1200w, /media/images/Figure_11.width-2400.jpg 2400w"/>
+          <source media="(min-width: 500px) and (max-width: 779px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+          <source media="(max-width: 499px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+          <img alt="Figure 11: First steps for a sustainable data ecosystem to improve service delivery" class="responsive-graph__image responsive-graph__image--visible-wide" src="/media/images/Figure_11.width-1200.jpg"/>
+         </picture>
+        </a>
+        <div class="responsive-graph__description-wrapper responsive-graph__description-wrapper--visible-narrow responsive-graph__description-wrapper--visible-medium" id="figure-description-wrapper-34aa27e0">
+         <div class="responsive-graph__long-description">
+          <p>
+           Diagram shows data collection and use, citizens and officials engaging with the data ecosystem and public infrastructure and service delivery: national databases are connected to district dashboard, which is connected to citizens and officials; officials are connected to district offices, which is connected to the clinic, registry office and school; citizens are directly connected to the clinic, registry office and school; there is data collection at the point of service delivery at the clinic, registry office and school, which connects back to national databases.
+          </p>
+         </div>
+        </div>
+        <figcaption class="media-caption">
+        </figcaption>
+       </figure>
+      </div>
+     </div>
+    </section>
+    <section class="section">
+     <div class="row row--narrow">
+      <div class="share space-section-bottom-med">
+       <div class="share__content">
+        <h2 class="type-m type-s--trailer">
+         <label for="shortUrl">
+          <b>
+           Share
+          </b>
+          Towards a new monitoring framework for CRVS
+         </label>
+        </h2>
+        <div class="share__wrapper" data-id="" data-js="">
+         <ul class="share__media">
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page with Facebook / Towards a new monitoring framework for CRVS / /8c5406" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//devinit.org/8c5406" target="_blank">
+            <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with Twitter / Towards a new monitoring framework for CRVS / /8c5406" href="https://twitter.com/intent/tweet/?text=Towards%20a%20new%20monitoring%20framework%20for%20CRVS&amp;url=https%3A//devinit.org/8c5406" target="_blank">
+            <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg"/>
+           </a>
+          </li>
+          <li class="share__item">
+           <a class="js-social-share" data-event-category="Share" data-event-label="Share page  with LinkedIn / Towards a new monitoring framework for CRVS / /8c5406" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//devinit.org/8c5406&amp;title=Towards%20a%20new%20monitoring%20framework%20for%20CRVS" target="_blank">
+            <img alt="Share with LinkedIn" src="/assets/svg/source/linkedin.svg"/>
+           </a>
+          </li>
+         </ul>
+         <div class="share__copy">
+          <input class="js-copy-field" id="shortUrl" readonly="" title="Short URL for sharing" type="text" value="/8c5406"/>
+          <button class="button js-copy-trigger">
+           Copy
+          </button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="space-section-both" id="downloads">
+       <div class="download">
+        <h2 class="type-m type-s--trailer">
+         Downloads
+        </h2>
+        <ul class="download__list">
+         <li class="download__item">
+          <span class="download__label">
+           English
+          </span>
+          <a class="download__link js-ga-download-click" data-event-label="Digital civil registration and legal identity systems: A joined-up approach to leave no one behind / English" href="/documents/715/Digital-civil-registration-and-legal-identity-systems.pdf">
+           Digital civil registration and legal identity systems: A joined-up approach to leave no one behind (PDF 1015.5kB )
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="orderReport">
+        <div class="orderReport__img" style="background-image: url(/media/images/Cover.2e16d0ba.fill-250x340.jpg);">
+        </div>
+        <div class="orderReport__content">
+         <h2 class="type-m type-s--trailer">
+          Download this report
+         </h2>
+         <p class="para type-l--trailer">
+         </p>
+         <a class="button button--a11y" href="/documents/715/Digital-civil-registration-and-legal-identity-systems.pdf" id="" title="Download now">
+          <span>
+           Download now
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="section section--alt">
+     <div class="row row--narrow">
+      <div class="footnotes">
+       <h2 class="heading type-l type-l--trailer">
+        Notes
+       </h2>
+       <ul class="footnotes__list">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          1
+         </span>
+         <a id="note-SVBqgQyVT">
+         </a>
+         <div class="footnotes__text">
+          Harbers, I., 2020. Legal identity for all? Gender inequality in the timing of birth registration in Mexico. World Development, Vol. 128. Available at:
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X19304279?via%3Dihub">
+           https://www.sciencedirect.com/science/article/abs/pii/S0305750X19304279?via%3Dihub
+          </a>
+         </div>
+         <a class="footnotes__return" href="#note-source-SVBqgQyVT">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          2
+         </span>
+         <a id="note-zeXnPz2Nw">
+         </a>
+         <div class="footnotes__text">
+          Development Initiatives, 2019. Measuring the state of civil registration and legal identity. Available at:
+          <a href="/wp-content/uploads/2019/10/measuring-the-state-of-civil-registration-and-legal-identity.pdf">
+           http://devinit.org/wp-content/uploads/2019/10/measuring-the-state-of-civil-registration-and-legal-identity.pdf
+          </a>
+         </div>
+         <a class="footnotes__return" href="#note-source-zeXnPz2Nw">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          3
+         </span>
+         <a id="note-YaZ6Uo55a">
+         </a>
+         <div class="footnotes__text">
+          UNICEF, Birth registration data,
+          <a href="https://data.unicef.org/topic/child-protection/birth-registration/">
+           https://data.unicef.org/topic/child-protection/birth-registration/
+          </a>
+          (accessed 16 March 2020)
+         </div>
+         <a class="footnotes__return" href="#note-source-YaZ6Uo55a">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          4
+         </span>
+         <a id="note-_1eK5biVN">
+         </a>
+         <div class="footnotes__text">
+          United Nations, Demographic and Social Statistics: Civil Registration and Vital Statistics,
+          <a href="https://unstats.un.org/unsd/demographic-social/crvs/">
+           https://unstats.un.org/unsd/demographic-social/crvs/
+          </a>
+          (accessed 16 March 2020)
+         </div>
+         <a class="footnotes__return" href="#note-source-_1eK5biVN">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          5
+         </span>
+         <a id="note-16uvF8vlD">
+         </a>
+         <div class="footnotes__text">
+          UNICEF, 2019. Birth Registration for Every Child by 2030: Are we on track? Available at:
+          <a href="https://data.unicef.org/resources/birth-registration-for-every-child-by-2030/">
+           https://data.unicef.org/resources/birth-registration-for-every-child-by-2030/
+          </a>
+         </div>
+         <a class="footnotes__return" href="#note-source-16uvF8vlD">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list extra hidden">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          6
+         </span>
+         <a id="note-5cpLC1qla">
+         </a>
+         <div class="footnotes__text">
+          Office of the Registrar General, India, Ministry of Home Affairs, 2017. Vital Statistics of India Based on The Civil Registration System, Government of India.
+         </div>
+         <a class="footnotes__return" href="#note-source-5cpLC1qla">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <ul class="footnotes__list extra hidden">
+        <li class="footnotes__item">
+         <span class="heading type-m type-m--trailer footnotes__sub">
+          7
+         </span>
+         <a id="note-pS391qppx">
+         </a>
+         <div class="footnotes__text">
+          Development Initiatives, 2019. Measuring the state of civil registration and legal identity. Available at:
+          <a href="/wp-content/uploads/2019/10/measuring-the-state-of-civil-registration-and-legal-identity.pdf">
+           http://devinit.org/wp-content/uploads/2019/10/measuring-the-state-of-civil-registration-and-legal-identity.pdf
+          </a>
+         </div>
+         <a class="footnotes__return" href="#note-source-pS391qppx">
+          Return to source text
+         </a>
+        </li>
+       </ul>
+       <button class="button" type="button">
+        Show More
+       </button>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="footer" role="contentinfo">
+    <div class="row">
+     <div class="l-footer">
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Sign up for our newsletter to receive regular news and updates
+       </h4>
+       <a class="button" href="https://us11.list-manage.com/subscribe?u=a829237ca0cf1470615c7f059&amp;id=ce30e2af0f">
+        Subscribe here
+       </a>
+       <h4 class="footer__title" style="padding-top: 2em;">
+        Cookie preferences
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a id="change_cookie_preferences">
+         </a>
+         <a class="button" href="#" onclick="document.cookie = 'cookie_notice=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'; location.reload();">
+          Change preferences
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get around
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/who-we-are/?nav=footer">
+          Who we are
+         </a>
+        </li>
+        <li>
+         <a href="/what-we-do/?nav=footer">
+          What we do
+         </a>
+        </li>
+        <li>
+         <a href="/how-we-work/?nav=footer">
+          How we work
+         </a>
+        </li>
+        <li>
+         <a href="/resources/?nav=footer">
+          Resources
+         </a>
+        </li>
+        <li>
+         <a href="/blog/?nav=footer">
+          Blog
+         </a>
+        </li>
+        <li>
+         <a href="/events/?nav=footer">
+          Events
+         </a>
+        </li>
+        <li>
+         <a href="/data/?nav=footer">
+          Data
+         </a>
+        </li>
+        <li>
+         <a href="/work-for-us/?nav=footer">
+          Work for us
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Get in touch
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/contact-us/?nav=footer">
+          Contact us
+         </a>
+        </li>
+        <li>
+         <a href="/media-centre/?nav=footer">
+          Media centre
+         </a>
+        </li>
+       </ul>
+       <ul class="footer__social">
+        <li>
+         <a href="https://twitter.com/devinitorg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+          <img alt="Share with Twitter" src="/assets/svg/source/twitter.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.facebook.com/Development.Initiatives/">
+          <img alt="Share with Facebook" src="/assets/svg/source/facebook.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.linkedin.com/company/development-initiatives">
+          <img alt="Share with Linkedin" src="/assets/svg/source/linkedin.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.youtube.com/channel/UCPo5N2Ac5ZOVB7Ao0NsKMIQ">
+          <img alt="Share with Youtube" src="/assets/svg/source/youtube.svg">
+          </img>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.flickr.com/photos/development_initiatives">
+          <img alt="Share with Flickr" src="/assets/svg/source/flickr.svg">
+          </img>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="l-footer__col">
+       <h4 class="footer__title">
+        Policies and statements
+       </h4>
+       <ul class="footer__list">
+        <li>
+         <a href="/policies-and-statements/modern-slavery-and-human-trafficking-statement/?nav=footer">
+          Modern slavery and human trafficking statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/privacy-and-cookies-policy/?nav=footer">
+          Privacy and cookies policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/responsible-employer-and-business-ethics-statement/?nav=footer">
+          Responsible employer and business ethics statement
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/income-acceptance-policy/?nav=footer">
+          Income acceptance policy
+         </a>
+        </li>
+        <li>
+         <a href="/policies-and-statements/equality-diversity-inclusion-statement/?nav=footer">
+          Equality, Diversity &amp; Inclusion statement
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="footer__meta">
+      <div class="footer__meta-copy footer__meta-copy--major">
+       <p data-block-key="bgfyy">
+        © Copyright 2024 Development initiatives. Content produced by Development Initiatives is licensed under a
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+         Creative Commons Attribution BY-NC-ND 4.0 International license
+        </a>
+        , unless stated otherwise on an image or page.
+       </p>
+      </div>
+      <div class="footer__meta-copy">
+       <p data-block-key="argqe">
+        Development Initiatives is the trading name of Development Initiatives Poverty Research Ltd, registered in England and Wales, Company No. 06368740; DI International Ltd, registered in England and Wales, Company No. 5802543, Registered Address: First Floor Centre, The Quorum, Bond Street South, Bristol, BS1 3AE, UK; and Development Initiatives Poverty Research America Inc. (a 501(C)3 company registered in the state of Delaware with the registration number 5737757), Registered Address: 1209 Orange Street, Wilmington, New Castle County, Delaware 19801.
+       </p>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="/assets/js/app.bundle.js">
+  </script>
+  <script src="/assets/notice/js/bundle.js">
+  </script>
+  <script>
+   document.querySelectorAll('[data-type=anchor]').forEach((elt) => {
+    elt.setAttribute('id', elt.dataset.id);
+  });
+  </script>
+  <script src="/assets/publications/js/bundle.js">
+  </script>
+  
+ </body>
+</html>
