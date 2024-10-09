@@ -1,0 +1,1 @@
+(()=>{var e;e=document.querySelectorAll("[data-notice]"),Array.prototype.forEach.call(e,(function(e){var t,o,c=e.getAttribute("id");c&&"dismissed"===(t=c,(o=document.cookie.match("(^|;) ?".concat(t,"=([^;]*)(;|$)")))?o[2]:null)?e.remove():e.classList.remove("display-none")}))})();

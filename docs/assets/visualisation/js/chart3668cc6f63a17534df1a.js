@@ -1,0 +1,104 @@
+(self["webpackChunkdi_website"] = self["webpackChunkdi_website"] || []).push([["node_modules_plotly_js_lib_locales_sv_js"],{
+
+/***/ "./node_modules/plotly.js/lib/locales/sv.js":
+/*!**************************************************!*\
+  !*** ./node_modules/plotly.js/lib/locales/sv.js ***!
+  \**************************************************/
+/***/ ((module) => {
+
+"use strict";
+/**
+* Copyright 2012-2020, Plotly, Inc.
+* All rights reserved.
+*
+* This source code is licensed under the MIT license found in the
+* LICENSE file in the root directory of this source tree.
+*/
+
+
+
+module.exports = {
+    moduleType: 'locale',
+    name: 'sv',
+    dictionary: {
+        'Autoscale': 'Autoskala',                                                        // components/modebar/buttons.js:148
+        'Box Select': 'Välj rektangel',                                                  // components/modebar/buttons.js:112
+        'Click to enter Colorscale title': 'Klicka för att ange titel på färgskala',     // plots/plots.js:326
+        'Click to enter Component A title': 'Klicka för att ange titel på komponent A',  // plots/ternary/ternary.js:376
+        'Click to enter Component B title': 'Klicka för att ange titel på komponent B',  // plots/ternary/ternary.js:386
+        'Click to enter Component C title': 'Klicka för att ange titel på komponent C',  // plots/ternary/ternary.js:396
+        'Click to enter Plot title': 'Klicka för att ange titel på diagram',             // plot_api/plot_api.js:584
+        'Click to enter X axis title': 'Klicka för att ange titel på x-axel',            // plots/plots.js:324
+        'Click to enter Y axis title': 'Klicka för att ange titel på y-axel',            // plots/plots.js:325
+        'Click to enter radial axis title': 'Klicka för att ange titel på radiell axel', // plots/polar/polar.js:498
+        'Compare data on hover': 'Jämför data när muspekaren hålls över',                // components/modebar/buttons.js:176
+        'Double-click on legend to isolate one trace': 'Dubbelklicka på förklaringen för att visa endast en serie',  // components/legend/handle_click.js:89
+        'Double-click to zoom back out': 'Dubbelklicka för att zooma ut igen',           // plots/cartesian/dragbox.js:1089
+        'Download plot': 'Ladda ner diagram',                                            // components/modebar/buttons.js:53
+        'Download plot as a png': 'Ladda ner diagram som png',                           // components/modebar/buttons.js:52
+        'Edit in Chart Studio': 'Editera i Chart Studio',                                // components/modebar/buttons.js:85
+        'IE only supports svg.  Changing format to svg.': 'IE stöder enbart svg. Byter format till svg.',  // components/modebar/buttons.js:63
+        'Lasso Select': 'Välj lasso',                                                    // components/modebar/buttons.js:121
+        'Orbital rotation': 'Orbital rotation',                                          // components/modebar/buttons.js:281
+        'Pan': 'Panorera',                                                               // components/modebar/buttons.js:103
+        'Produced with Plotly': 'Skapad med Plotly',                                     // components/modebar/modebar.js:304
+        'Reset': 'Återställ',                                                            // components/modebar/buttons.js:433
+        'Reset axes': 'Återställ axlar',                                                 // components/modebar/buttons.js:157
+        'Reset camera to default': 'Återställ kamera till standard',                     // components/modebar/buttons.js:319
+        'Reset camera to last save': 'Återställ kamera till senast sparad',              // components/modebar/buttons.js:327
+        'Reset view': 'Återställ vy',                                                    // components/modebar/buttons.js:512
+        'Reset views': 'Återställ vyer',                                                 // components/modebar/buttons.js:550
+        'Show closest data on hover': 'Visa närmaste värde när muspekaren hålls över',   // components/modebar/buttons.js:166
+        'Snapshot succeeded': 'Bild skapad',                                             // components/modebar/buttons.js:75
+        'Sorry, there was a problem downloading your snapshot!': 'Tyvärr gick något fel vid nedladdning av bild',  // components/modebar/buttons.js:78
+        'Taking snapshot - this may take a few seconds': 'Skapar bild - detta kan ta några sekunder',  // components/modebar/buttons.js:60
+        'Toggle Spike Lines': 'Aktivera/Inaktivera topplinjer',                          // components/modebar/buttons.js:569
+        'Toggle show closest data on hover': 'Aktivera/Inaktivera visa närmaste värde när muspekaren hålls över',                      // components/modebar/buttons.js:361
+        'Turntable rotation': 'Platt rotation',                                          // components/modebar/buttons.js:290
+        'Zoom': 'Zooma',                                                                 // components/modebar/buttons.js:94
+        'Zoom in': 'Zooma in',                                                           // components/modebar/buttons.js:130
+        'Zoom out': 'Zooma ut',                                                          // components/modebar/buttons.js:139
+        'close:': 'stängning:',                                                          // traces/ohlc/calc.js:106
+        'concentration:': 'koncentration:',                                              // traces/sankey/plot.js:166
+        'high:': 'hög:',                                                                 // traces/ohlc/calc.js:104
+        'incoming flow count:': 'inkommande flöde summering:',                           // traces/sankey/plot.js:167
+        'kde:': 'kde:',                                                                  // traces/violin/calc.js:94
+        'lat:': 'lat:',                                                                  // traces/scattergeo/calc.js:48
+        'lon:': 'lon:',                                                                  // traces/scattergeo/calc.js:49
+        'low:': 'låg:',                                                                  // traces/ohlc/calc.js:105
+        'lower fence:': 'undre gräns:',                                                  // traces/box/calc.js:146
+        'max:': 'max:',                                                                  // traces/box/calc.js:144
+        'mean ± σ:': 'medel ± σ:',                                                       // traces/box/calc.js:145
+        'mean:': 'medel:',                                                               // traces/box/calc.js:145
+        'median:': 'median:',                                                            // traces/box/calc.js:140
+        'min:': 'min:',                                                                  // traces/box/calc.js:141
+        'new text': 'ny text',                                                           // plots/plots.js:327
+        'open:': 'öppning:',                                                             // traces/ohlc/calc.js:103
+        'outgoing flow count:': 'utgående flöde summering:',                             // traces/sankey/plot.js:168
+        'q1:': 'q1:',                                                                    // traces/box/calc.js:142
+        'q3:': 'q3:',                                                                    // traces/box/calc.js:143
+        'source:': 'källa:',                                                             // traces/sankey/plot.js:164
+        'target:': 'mål:',                                                               // traces/sankey/plot.js:165
+        'trace': 'serie',                                                                // plots/plots.js:329
+        'upper fence:': 'övre gräns:',                                                   // traces/box/calc.js:147
+    },
+    format: {
+        days: ['Söndag', 'Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'],
+        shortDays: ['Sön', 'Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör'],
+        months: [
+            'Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni',
+            'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'
+        ],
+        shortMonths: [
+            'Jan', 'Feb', 'Mar', 'Apr', 'Maj', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec'
+        ],
+        date: '%Y-%m-%d'
+    }
+};
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kaS13ZWJzaXRlLy4vbm9kZV9tb2R1bGVzL3Bsb3RseS5qcy9saWIvbG9jYWxlcy9zdi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFYTs7QUFFYjtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6ImNoYXJ0MzY2OGNjNmY2M2ExNzUzNGRmMWEuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiogQ29weXJpZ2h0IDIwMTItMjAyMCwgUGxvdGx5LCBJbmMuXG4qIEFsbCByaWdodHMgcmVzZXJ2ZWQuXG4qXG4qIFRoaXMgc291cmNlIGNvZGUgaXMgbGljZW5zZWQgdW5kZXIgdGhlIE1JVCBsaWNlbnNlIGZvdW5kIGluIHRoZVxuKiBMSUNFTlNFIGZpbGUgaW4gdGhlIHJvb3QgZGlyZWN0b3J5IG9mIHRoaXMgc291cmNlIHRyZWUuXG4qL1xuXG4ndXNlIHN0cmljdCc7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICAgIG1vZHVsZVR5cGU6ICdsb2NhbGUnLFxuICAgIG5hbWU6ICdzdicsXG4gICAgZGljdGlvbmFyeToge1xuICAgICAgICAnQXV0b3NjYWxlJzogJ0F1dG9za2FsYScsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczoxNDhcbiAgICAgICAgJ0JveCBTZWxlY3QnOiAnVsOkbGogcmVrdGFuZ2VsJywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjExMlxuICAgICAgICAnQ2xpY2sgdG8gZW50ZXIgQ29sb3JzY2FsZSB0aXRsZSc6ICdLbGlja2EgZsO2ciBhdHQgYW5nZSB0aXRlbCBww6UgZsOkcmdza2FsYScsICAgICAvLyBwbG90cy9wbG90cy5qczozMjZcbiAgICAgICAgJ0NsaWNrIHRvIGVudGVyIENvbXBvbmVudCBBIHRpdGxlJzogJ0tsaWNrYSBmw7ZyIGF0dCBhbmdlIHRpdGVsIHDDpSBrb21wb25lbnQgQScsICAvLyBwbG90cy90ZXJuYXJ5L3Rlcm5hcnkuanM6Mzc2XG4gICAgICAgICdDbGljayB0byBlbnRlciBDb21wb25lbnQgQiB0aXRsZSc6ICdLbGlja2EgZsO2ciBhdHQgYW5nZSB0aXRlbCBww6Uga29tcG9uZW50IEInLCAgLy8gcGxvdHMvdGVybmFyeS90ZXJuYXJ5LmpzOjM4NlxuICAgICAgICAnQ2xpY2sgdG8gZW50ZXIgQ29tcG9uZW50IEMgdGl0bGUnOiAnS2xpY2thIGbDtnIgYXR0IGFuZ2UgdGl0ZWwgcMOlIGtvbXBvbmVudCBDJywgIC8vIHBsb3RzL3Rlcm5hcnkvdGVybmFyeS5qczozOTZcbiAgICAgICAgJ0NsaWNrIHRvIGVudGVyIFBsb3QgdGl0bGUnOiAnS2xpY2thIGbDtnIgYXR0IGFuZ2UgdGl0ZWwgcMOlIGRpYWdyYW0nLCAgICAgICAgICAgICAvLyBwbG90X2FwaS9wbG90X2FwaS5qczo1ODRcbiAgICAgICAgJ0NsaWNrIHRvIGVudGVyIFggYXhpcyB0aXRsZSc6ICdLbGlja2EgZsO2ciBhdHQgYW5nZSB0aXRlbCBww6UgeC1heGVsJywgICAgICAgICAgICAvLyBwbG90cy9wbG90cy5qczozMjRcbiAgICAgICAgJ0NsaWNrIHRvIGVudGVyIFkgYXhpcyB0aXRsZSc6ICdLbGlja2EgZsO2ciBhdHQgYW5nZSB0aXRlbCBww6UgeS1heGVsJywgICAgICAgICAgICAvLyBwbG90cy9wbG90cy5qczozMjVcbiAgICAgICAgJ0NsaWNrIHRvIGVudGVyIHJhZGlhbCBheGlzIHRpdGxlJzogJ0tsaWNrYSBmw7ZyIGF0dCBhbmdlIHRpdGVsIHDDpSByYWRpZWxsIGF4ZWwnLCAvLyBwbG90cy9wb2xhci9wb2xhci5qczo0OThcbiAgICAgICAgJ0NvbXBhcmUgZGF0YSBvbiBob3Zlcic6ICdKw6RtZsO2ciBkYXRhIG7DpHIgbXVzcGVrYXJlbiBow6VsbHMgw7Z2ZXInLCAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczoxNzZcbiAgICAgICAgJ0RvdWJsZS1jbGljayBvbiBsZWdlbmQgdG8gaXNvbGF0ZSBvbmUgdHJhY2UnOiAnRHViYmVsa2xpY2thIHDDpSBmw7Zya2xhcmluZ2VuIGbDtnIgYXR0IHZpc2EgZW5kYXN0IGVuIHNlcmllJywgIC8vIGNvbXBvbmVudHMvbGVnZW5kL2hhbmRsZV9jbGljay5qczo4OVxuICAgICAgICAnRG91YmxlLWNsaWNrIHRvIHpvb20gYmFjayBvdXQnOiAnRHViYmVsa2xpY2thIGbDtnIgYXR0IHpvb21hIHV0IGlnZW4nLCAgICAgICAgICAgLy8gcGxvdHMvY2FydGVzaWFuL2RyYWdib3guanM6MTA4OVxuICAgICAgICAnRG93bmxvYWQgcGxvdCc6ICdMYWRkYSBuZXIgZGlhZ3JhbScsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczo1M1xuICAgICAgICAnRG93bmxvYWQgcGxvdCBhcyBhIHBuZyc6ICdMYWRkYSBuZXIgZGlhZ3JhbSBzb20gcG5nJywgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczo1MlxuICAgICAgICAnRWRpdCBpbiBDaGFydCBTdHVkaW8nOiAnRWRpdGVyYSBpIENoYXJ0IFN0dWRpbycsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczo4NVxuICAgICAgICAnSUUgb25seSBzdXBwb3J0cyBzdmcuICBDaGFuZ2luZyBmb3JtYXQgdG8gc3ZnLic6ICdJRSBzdMO2ZGVyIGVuYmFydCBzdmcuIEJ5dGVyIGZvcm1hdCB0aWxsIHN2Zy4nLCAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6NjNcbiAgICAgICAgJ0xhc3NvIFNlbGVjdCc6ICdWw6RsaiBsYXNzbycsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjEyMVxuICAgICAgICAnT3JiaXRhbCByb3RhdGlvbic6ICdPcmJpdGFsIHJvdGF0aW9uJywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczoyODFcbiAgICAgICAgJ1Bhbic6ICdQYW5vcmVyYScsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6MTAzXG4gICAgICAgICdQcm9kdWNlZCB3aXRoIFBsb3RseSc6ICdTa2FwYWQgbWVkIFBsb3RseScsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9tb2RlYmFyLmpzOjMwNFxuICAgICAgICAnUmVzZXQnOiAnw4V0ZXJzdMOkbGwnLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjQzM1xuICAgICAgICAnUmVzZXQgYXhlcyc6ICfDhXRlcnN0w6RsbCBheGxhcicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjE1N1xuICAgICAgICAnUmVzZXQgY2FtZXJhIHRvIGRlZmF1bHQnOiAnw4V0ZXJzdMOkbGwga2FtZXJhIHRpbGwgc3RhbmRhcmQnLCAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjMxOVxuICAgICAgICAnUmVzZXQgY2FtZXJhIHRvIGxhc3Qgc2F2ZSc6ICfDhXRlcnN0w6RsbCBrYW1lcmEgdGlsbCBzZW5hc3Qgc3BhcmFkJywgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjMyN1xuICAgICAgICAnUmVzZXQgdmlldyc6ICfDhXRlcnN0w6RsbCB2eScsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjUxMlxuICAgICAgICAnUmVzZXQgdmlld3MnOiAnw4V0ZXJzdMOkbGwgdnllcicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjU1MFxuICAgICAgICAnU2hvdyBjbG9zZXN0IGRhdGEgb24gaG92ZXInOiAnVmlzYSBuw6RybWFzdGUgdsOkcmRlIG7DpHIgbXVzcGVrYXJlbiBow6VsbHMgw7Z2ZXInLCAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjE2NlxuICAgICAgICAnU25hcHNob3Qgc3VjY2VlZGVkJzogJ0JpbGQgc2thcGFkJywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczo3NVxuICAgICAgICAnU29ycnksIHRoZXJlIHdhcyBhIHByb2JsZW0gZG93bmxvYWRpbmcgeW91ciBzbmFwc2hvdCEnOiAnVHl2w6RyciBnaWNrIG7DpWdvdCBmZWwgdmlkIG5lZGxhZGRuaW5nIGF2IGJpbGQnLCAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6NzhcbiAgICAgICAgJ1Rha2luZyBzbmFwc2hvdCAtIHRoaXMgbWF5IHRha2UgYSBmZXcgc2Vjb25kcyc6ICdTa2FwYXIgYmlsZCAtIGRldHRhIGthbiB0YSBuw6VncmEgc2VrdW5kZXInLCAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6NjBcbiAgICAgICAgJ1RvZ2dsZSBTcGlrZSBMaW5lcyc6ICdBa3RpdmVyYS9JbmFrdGl2ZXJhIHRvcHBsaW5qZXInLCAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6NTY5XG4gICAgICAgICdUb2dnbGUgc2hvdyBjbG9zZXN0IGRhdGEgb24gaG92ZXInOiAnQWt0aXZlcmEvSW5ha3RpdmVyYSB2aXNhIG7DpHJtYXN0ZSB2w6RyZGUgbsOkciBtdXNwZWthcmVuIGjDpWxscyDDtnZlcicsICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjM2MVxuICAgICAgICAnVHVybnRhYmxlIHJvdGF0aW9uJzogJ1BsYXR0IHJvdGF0aW9uJywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBjb21wb25lbnRzL21vZGViYXIvYnV0dG9ucy5qczoyOTBcbiAgICAgICAgJ1pvb20nOiAnWm9vbWEnLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6OTRcbiAgICAgICAgJ1pvb20gaW4nOiAnWm9vbWEgaW4nLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gY29tcG9uZW50cy9tb2RlYmFyL2J1dHRvbnMuanM6MTMwXG4gICAgICAgICdab29tIG91dCc6ICdab29tYSB1dCcsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIGNvbXBvbmVudHMvbW9kZWJhci9idXR0b25zLmpzOjEzOVxuICAgICAgICAnY2xvc2U6JzogJ3N0w6RuZ25pbmc6JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL29obGMvY2FsYy5qczoxMDZcbiAgICAgICAgJ2NvbmNlbnRyYXRpb246JzogJ2tvbmNlbnRyYXRpb246JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL3NhbmtleS9wbG90LmpzOjE2NlxuICAgICAgICAnaGlnaDonOiAnaMO2ZzonLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL29obGMvY2FsYy5qczoxMDRcbiAgICAgICAgJ2luY29taW5nIGZsb3cgY291bnQ6JzogJ2lua29tbWFuZGUgZmzDtmRlIHN1bW1lcmluZzonLCAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9zYW5rZXkvcGxvdC5qczoxNjdcbiAgICAgICAgJ2tkZTonOiAna2RlOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL3Zpb2xpbi9jYWxjLmpzOjk0XG4gICAgICAgICdsYXQ6JzogJ2xhdDonLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9zY2F0dGVyZ2VvL2NhbGMuanM6NDhcbiAgICAgICAgJ2xvbjonOiAnbG9uOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL3NjYXR0ZXJnZW8vY2FsYy5qczo0OVxuICAgICAgICAnbG93Oic6ICdsw6VnOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL29obGMvY2FsYy5qczoxMDVcbiAgICAgICAgJ2xvd2VyIGZlbmNlOic6ICd1bmRyZSBncsOkbnM6JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9ib3gvY2FsYy5qczoxNDZcbiAgICAgICAgJ21heDonOiAnbWF4OicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL2JveC9jYWxjLmpzOjE0NFxuICAgICAgICAnbWVhbiDCsSDPgzonOiAnbWVkZWwgwrEgz4M6JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL2JveC9jYWxjLmpzOjE0NVxuICAgICAgICAnbWVhbjonOiAnbWVkZWw6JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyB0cmFjZXMvYm94L2NhbGMuanM6MTQ1XG4gICAgICAgICdtZWRpYW46JzogJ21lZGlhbjonLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9ib3gvY2FsYy5qczoxNDBcbiAgICAgICAgJ21pbjonOiAnbWluOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL2JveC9jYWxjLmpzOjE0MVxuICAgICAgICAnbmV3IHRleHQnOiAnbnkgdGV4dCcsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBwbG90cy9wbG90cy5qczozMjdcbiAgICAgICAgJ29wZW46JzogJ8O2cHBuaW5nOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9vaGxjL2NhbGMuanM6MTAzXG4gICAgICAgICdvdXRnb2luZyBmbG93IGNvdW50Oic6ICd1dGfDpWVuZGUgZmzDtmRlIHN1bW1lcmluZzonLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL3NhbmtleS9wbG90LmpzOjE2OFxuICAgICAgICAncTE6JzogJ3ExOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyB0cmFjZXMvYm94L2NhbGMuanM6MTQyXG4gICAgICAgICdxMzonOiAncTM6JywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9ib3gvY2FsYy5qczoxNDNcbiAgICAgICAgJ3NvdXJjZTonOiAna8OkbGxhOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9zYW5rZXkvcGxvdC5qczoxNjRcbiAgICAgICAgJ3RhcmdldDonOiAnbcOlbDonLCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIHRyYWNlcy9zYW5rZXkvcGxvdC5qczoxNjVcbiAgICAgICAgJ3RyYWNlJzogJ3NlcmllJywgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gcGxvdHMvcGxvdHMuanM6MzI5XG4gICAgICAgICd1cHBlciBmZW5jZTonOiAnw7Z2cmUgZ3LDpG5zOicsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdHJhY2VzL2JveC9jYWxjLmpzOjE0N1xuICAgIH0sXG4gICAgZm9ybWF0OiB7XG4gICAgICAgIGRheXM6IFsnU8O2bmRhZycsICdNw6VuZGFnJywgJ1Rpc2RhZycsICdPbnNkYWcnLCAnVG9yc2RhZycsICdGcmVkYWcnLCAnTMO2cmRhZyddLFxuICAgICAgICBzaG9ydERheXM6IFsnU8O2bicsICdNw6VuJywgJ1RpcycsICdPbnMnLCAnVG9yJywgJ0ZyZScsICdMw7ZyJ10sXG4gICAgICAgIG1vbnRoczogW1xuICAgICAgICAgICAgJ0phbnVhcmknLCAnRmVicnVhcmknLCAnTWFycycsICdBcHJpbCcsICdNYWonLCAnSnVuaScsXG4gICAgICAgICAgICAnSnVsaScsICdBdWd1c3RpJywgJ1NlcHRlbWJlcicsICdPa3RvYmVyJywgJ05vdmVtYmVyJywgJ0RlY2VtYmVyJ1xuICAgICAgICBdLFxuICAgICAgICBzaG9ydE1vbnRoczogW1xuICAgICAgICAgICAgJ0phbicsICdGZWInLCAnTWFyJywgJ0FwcicsICdNYWonLCAnSnVuJyxcbiAgICAgICAgICAgICdKdWwnLCAnQXVnJywgJ1NlcCcsICdPa3QnLCAnTm92JywgJ0RlYydcbiAgICAgICAgXSxcbiAgICAgICAgZGF0ZTogJyVZLSVtLSVkJ1xuICAgIH1cbn07XG4iXSwic291cmNlUm9vdCI6IiJ9
