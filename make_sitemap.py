@@ -31,13 +31,13 @@ def make_url_path(url):
     return path
 
 def make_sitemap():
-    html_content = "<html><head><title>Sitemap</title></head><body>"
+    html_content = "<html><head><title>Sitemap</title></head><body><ol>"
     urls = fetch_sitemap()
     for url in tqdm(urls):
         url_path = make_url_path(url)
-        anchor = f"<a href='{url_path}'>{url_path}</a>\n"
+        anchor = f"<li><a href='{url_path}'>{url_path}</a></li>\n"
         html_content += anchor
-    html_content += "</body></html>"
+    html_content += "</ol></body></html>"
     with open("docs/sitemap.html", "w") as html_file:
         html_file.write(html_content)
 
