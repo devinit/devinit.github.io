@@ -107,6 +107,12 @@ def crawl_and_save(sitemap_url):
             html_content = fetch_page(url)
             if html_content:
                 soup = BeautifulSoup(html_content, "html.parser")
+
+                # Find the div with class 'notice__wrapper' and remove it
+                notice_div = soup.find('div', class_='notice__wrapper')
+                if notice_div:
+                    notice_div.decompose()  # Removes the element from the DOM
+
                 # Convert the BeautifulSoup object to a string for easier manipulation
                 html_str = soup.prettify()
 
