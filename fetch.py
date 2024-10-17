@@ -102,6 +102,10 @@ def save_html(url, html_content):
 def crawl_and_save(sitemap_url):
     urls = fetch_sitemap(sitemap_url)
     for url in tqdm(urls):
+        if url.startswith('https://devinit.org/data/spotlight-kenya'):
+            continue
+        if url.startswith('https://devinit.org/data/spotlight-uganda'):
+            continue
         file_path = make_url_path(url)
         if not os.path.exists(file_path):
             html_content = fetch_page(url)
