@@ -7,7 +7,8 @@ documents_dir = 'docs/wp-content'
 html_dir = 'docs'
 
 # Get a list of all document files in the documents directory
-document_files = [doc[4:] for doc in glob.glob(os.path.join(documents_dir, '**/*'), recursive=True) if doc.lower().endswith(('.bmp', '.csv', '.doc', '.docx', '.gif', '.jpeg', '.jpg', '.mp4', '.ods', '.odt', '.pdf', '.png', '.ppt', '.pptx', '.svg', '.tif', '.txt'))]
+document_files = [doc[4:] for doc in glob.glob(os.path.join(documents_dir, '**/*'), recursive=True) if doc.lower().endswith(('.bmp', '.csv', '.doc', '.docx', '.gif', '.jpeg', '.jpg', '.mp4', '.ods', '.odt', '.pdf', '.png', '.ppt', '.pptx', '.svg', '.tif', '.txt', '.xls', '.xlsx'))]
+
 # Create a set to store referenced documents
 referenced_documents = set()
 
