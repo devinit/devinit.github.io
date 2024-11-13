@@ -22,6 +22,7 @@ rsync -r /home/alex/git/DIwebsite-redesign/media/documents docs/media/
 find docs/media -type f -size +50M | xargs rm
 
 python3 fetch.py
+python3 fetch_pages.py
 python3 remove_cloudflare.py
 python3 clean_images.py
 python3 clean_docs.py
